@@ -42,3 +42,39 @@ retinaBackground($image, $ext = 'png') {
 		background-image url('../images/' + $image + '@2x.' + $ext)
 	}
 }
+
+
+
+font-size(font-size = 16px, line-height = 1)
+	font-size  font-size // px fallback
+	font-size  unit((font-size / 16), rem) 
+	line-height line-height
+
+
+font-face(family, path, weight='normal')
+	@font-face
+		font-family family
+		font-weight weight
+		font-style normal
+		src url(path + '.eot')
+		src url(path + '.eot?#iefix') format('embedded-opentype'),
+			url(path + '.woff') format('woff'),
+			url(path + '.ttf') format('truetype'),
+			url(path + '.svg#') format('svg')
+
+
+
+// calculate width in %
+relative-width(child, parent)
+	width (child / parent) * 100 + '%'
+
+
+// wrapper for section content
+container() {
+	margin 0 auto
+	padding 60px 0
+	display block
+	relative-width(1200, 1300)
+}
+
+

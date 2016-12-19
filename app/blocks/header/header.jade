@@ -1,5 +1,35 @@
-mixin header()
-	+b.header&attributes(attributes)
-		+e.IMG.logo(src='assets/images/logo.png', alt='логотп Graxpo')
+mixin menu-item(content, link, target)
+	- var href = link || '#'
+	- var target = target || '_self'
+	
+	+e.LI.menu-item
+		+e.A.menu-link(href=href, target=target) #{content}
 
+mixin header()
+	+b.HEADER.header&attributes(attributes)
+		+e.DIV.container
+			+e.IMG.logo(src='assets/images/logo.png', alt='логотип Graxpo')
+			+e.NAV.navigation
+				+e.UL.menu-items
+					+menu-item('Home', '#home')
+					+menu-item('About', '#about')
+					+menu-item('Service', '#service')
+					+menu-item('Portfolio', '#portfolio')
+					+menu-item('Teams', '#teams')
+					+menu-item('Blog', '#blog')
+					+menu-item('Contact', '#contact')
+
+			+e.H1.title HELLO, WE’RE PROTHEMERS
+				+e.SPAN.caption FRESH PREMIMIUM QUALITY PSD TEMPLATE
+
+			+e.IMG.thing_headphones(src='assets/images/headphones.png', alt='headphones')
+			+e.IMG.thing_pencils(src='assets/images/pencils.png', alt='pencils')
+			+e.IMG.thing_glasses(src='assets/images/glasses.png', alt='glasses')
+			+e.IMG.thing_juice(src='assets/images/juice.png', alt='juice')
+			+e.IMG.thing_mouse(src='assets/images/mouse.png', alt='mouse')
+			+e.IMG.thing_pen-holder(src='assets/images/pen-holder.png', alt='pen-holder')
+			
+			+e.DIV.scroll
+				+e.DIV.scroll-button
+				+e.DIV.scroll-text Scroll Down
 		block
