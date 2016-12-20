@@ -1,0 +1,16 @@
+.scroll-button
+	position fixed
+	bottom 10vh
+	left 50%
+	transform translateX(-50%)
+	
+	&__icon
+		cursor pointer
+		sprite($icon_mouse)
+		margin 10px auto
+		animation-name bounce
+
+	&__text
+		color color-font-scroll
+		font-size(12px)
+		text-transform uppercase

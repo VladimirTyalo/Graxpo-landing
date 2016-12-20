@@ -1,3 +1,5 @@
+include ../scroll-button/scroll-button
+
 mixin menu-item(content, link, target)
 	- var href = link || '#'
 	- var target = target || '_self'
@@ -29,7 +31,6 @@ mixin header()
 			+e.IMG.thing_mouse(src='assets/images/mouse.png', alt='mouse')
 			+e.IMG.thing_pen-holder(src='assets/images/pen-holder.png', alt='pen-holder')
 			
-			+e.DIV.scroll
-				+e.DIV.scroll-button
-				+e.DIV.scroll-text Scroll Down
+			+scroll-button
+
 		block
