@@ -3,6 +3,28 @@
 *::after
     box-sizing border-box
 
+// // for proper  color changing in svg
+// svg,
+// svg * 
+//     fill inherit
+//     stroke inherit
+
+// allow svg icons to be colored by CSS
+svg,
+symbol,
+circle,
+ellipse,
+g,
+line,
+path,
+polygon,
+polyline,
+rect 
+    fill: inherit
+    stroke: inherit
+
+
+
 html
     height 100%
 
@@ -12,6 +34,7 @@ body
     height 100%
     font-family OpenSans
     font-size(16px)
+    background bg-main
 
 
 a 

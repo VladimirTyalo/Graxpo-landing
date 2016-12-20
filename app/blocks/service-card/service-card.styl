@@ -1,0 +1,39 @@
+.service-card
+	position relative
+	display inline-block
+	padding 3.3rem 3rem 3.3rem 10rem 
+	border-radius 0.5em
+	max-width 50%
+	transition 0.2s
+	border 3px solid #ebebeb
+
+
+	&__icon
+		position absolute
+		top 3rem
+		left 2rem
+		width 110px
+		height 110px
+		fill color-font-scroll
+
+	&__title
+		title(true)
+		text-align left
+
+	&__text 
+		text-align left
+		
+	&:hover 
+		background #e84c3d
+
+	&:hover .service-card__icon
+		fill white
+
+	&:hover .service-card__title::after 
+		background white
+
+	&:hover .service-card__title,
+	&:hover .service-card__text
+		color white
+
+
