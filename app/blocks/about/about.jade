@@ -1,0 +1,14 @@
+include ../btn/btn
+
+
+mixin about()
+	+b.about&attributes(attributes)
+		+e.container
+			+e.SECTION.description
+				+e.H2.title About Graxpo
+				+e.P.text   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eos delectus qui, non culpa, ex quos illum nulla recusandae, vitae quia. Obcaecati facere quibusdam vero ullam modi necessitatibus id earum quasi reprehenderit, placeat, laborum adipisci voluptate totam sed atque laudantium ut. Officiis ab sit nemo laborum unde, inventore reprehenderit culpa praesentium, alias repellat in natus, quo aliquid! Ad, repellat, dolorem.
+				+btn.about__btn Learn More!
+			+e.SECTION.preview
+				+e.IMG.img(src='assets/images/preview.png' alt='page preview' width='444' height='325')
+			
+		block

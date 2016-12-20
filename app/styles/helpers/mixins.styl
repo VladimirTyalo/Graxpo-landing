@@ -70,11 +70,45 @@ relative-width(child, parent)
 
 
 // wrapper for section content
-container() {
+container() 
 	margin 0 auto
 	padding 60px 0
 	display block
 	relative-width(1200, 1300)
-}
+
+
+// title with uderscores in left or middle or rihght
+title(left = true, middle = false, right = false) 
+	margin-top 0
+	margin-bottom 2em
+	position relative
+	color color-font-title
+	font-family Roboto
+	font-size(20px)
+	text-transform uppercase
+	font-family Roboto
+
+	&::after
+		content ''
+		position absolute
+		width 2em
+		height 3px
+		background color-font-title
+		bottom -1em
+
+		if left 
+			left 0
+
+		if middle
+			left 50%
+			transform translate(-50%)
+
+		if right 
+			right 0
+		
+			
+
+		 
+			
 
 
