@@ -1,0 +1,60 @@
+.views
+	min-height 368px
+	background-image  linear-gradient(rgba(253, 92, 79, 0.9) 0%, rgba(253, 92, 79, 0.9) 100%), url('../images/city-street.jpg')
+	transition 1s
+
+	&:hover
+		background-image  linear-gradient(transparent  0%, transparent 100%), url('../images/city-street.jpg')
+	
+	&:hover .views__item
+		background rgba(0, 0, 0, 0.7)
+		z-index 20
+
+	&__container
+		container()
+		
+	
+	&__features
+		margin 0
+		margin-top 4em
+		padding 0
+		list-style none
+		display flex
+		justify-content space-around
+		align-items stretch
+	
+	&__item
+		position relative
+		max-width 200px
+		padding 1em
+
+
+	&__amount
+		font-family Roboto
+		font-size(30px)
+		color white
+		margin-left: 50px
+		margin-bottom: 2em
+		text-align right
+
+
+	&__title
+		font-family Roboto
+		title(true)
+		display block
+		width 100%
+		font-size(16px)
+		text-transform: uppercase
+		color white
+
+		&::after {
+			background white
+		}
+
+
+	&__icon
+		position absolute
+		width 50px
+		height 50px
+		fill white
+		

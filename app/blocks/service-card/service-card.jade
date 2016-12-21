@@ -2,7 +2,8 @@ include ../icon/icon
 
 mixin service-card(iconName, title, text)
 	+b.ARTICLE.service-card&attributes(attributes)
-		+icon(iconName, false).icon
+		+e.DIV.icon-wrapper
+			+icon(iconName, false).icon
 		+e.DIV.content
 			+e.H3.title #{title}
 			+e.P.text #{text}

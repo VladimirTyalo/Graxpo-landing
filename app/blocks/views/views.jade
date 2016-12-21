@@ -1,0 +1,15 @@
+mixin achievment(iconName, amount, title)
+	+e.LI.item
+		+icon(iconName,false).icon
+		+e.amount #{amount}
+		+e.H4.title #{title}
+
+mixin views()
+	+b.views&attributes(attributes)
+		+e.container
+			+e.UL.features
+				+achievment('like', 1580, 'project completed')
+				+achievment('heart', 2850, 'PEOPLE LOVED')
+				+achievment('star', 1500, 'IDENTIFY EARN')
+				+achievment('target', 1430, 'BUSINES DONOR')
+		block

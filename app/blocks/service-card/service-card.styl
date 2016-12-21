@@ -1,20 +1,34 @@
 .service-card
 	position relative
-	display inline-block
+	flex 0 1 49%
+	
+	margin-bottom: 2.1rem
+	margin-right: 2%
 	padding 3.3rem 3rem 3.3rem 10rem 
 	border-radius 0.5em
-	max-width 50%
 	transition 0.2s
 	border 3px solid #ebebeb
 
+	&:nth-of-type(2n) 
+		margin-right 0
+
+	&__icon-wrapper
+		position absolute
+		top 3rem
+		left 1rem
+		width 110px
+		height 110px
+		background red
+		border-radius 50%
 
 	&__icon
 		position absolute
-		top 3rem
-		left 2rem
-		width 110px
-		height 110px
-		fill color-font-scroll
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		width 50px
+		height 50px
+		fill white
 
 	&__title
 		title(true)
@@ -26,8 +40,11 @@
 	&:hover 
 		background #e84c3d
 
+	&:hover .service-card__icon-wrapper
+		background white
+
 	&:hover .service-card__icon
-		fill white
+		fill red
 
 	&:hover .service-card__title::after 
 		background white
