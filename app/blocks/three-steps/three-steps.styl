@@ -1,5 +1,96 @@
-.three-steps
-	
+.three-steps	
 	&__container
 		container()
+
+	&__title 
+		title(false, true)
+		font-size(20px)
+		text-align: center
+		margin-bottom 40px
+
+	&__description
+		font-family OpenSans
+		font-size(14px)
+		text-align center
+		relative-width(550, 1365)
+		margin auto
+		margin-bottom 40px
+
+
+	&__steps
+		display table
+		position relative
+		width 100%
+
+		&::after
+			content ''
+			position absolute
+			height 2px
+			background grey
+			top 75px
+			left 15%
+			right 15%
+			z-index 5
+
+
+	&__step
+		position relative
+		max-width 300px
+		text-align center
+		display table-cell
+		width 33%
+
+	&__icon-wrapper
+		position relative
+		z-index 10
+		
+		
+		&::before
+			content ''
+			position absolute
+			width 85px
+			height 85px
+			border-radius 50%
+			top 50%
+			left 50%
+			transform translate(-50%, -50%)
+			background grey
+			z-index 10
+
+
+		&::after
+			content ''
+			position absolute
+			width 100px
+			height 100px
+			border-radius 50%
+			top 50%
+			left 50%
+			transform translate(-50%, -50%)
+			border 2px solid grey
+			background bg-main
+			z-index 7
+
+
+	&__icon
+		display block
+		position relative
+		width 50px
+		height 50px
+		fill red
+		margin 50px auto
+		z-index 10
+		
+
+
+
+	&__step-title
+		font-size(16px)
+		text-transform uppercase
+		color #333b46
+		margin-bottom 30px
+
+	&__step-text
+		font-size(14px)
+
 

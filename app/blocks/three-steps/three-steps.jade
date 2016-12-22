@@ -1,17 +1,18 @@
 mixin step(iconName, title, text)
 	+e.DIV.step
-		+icon(iconName, false)
-		+e.H4.title #{title}
-		+e.P.text #{text}
+		+e.icon-wrapper
+			+icon(iconName, false).icon
+		+e.H4.step-title #{title}
+		+e.P.step-text #{text}
 
 mixin three-steps()
 	+b.three-steps&attributes(attributes)
-		+e.contaner
+		+e.container
 			+e.H3.title Three Simple Steps 
 			+e.P.description Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text 
 			+e.DIV.steps
-				+step('rise','technological', 'Instant access from any device from mobile to laptop')
-				+step('rise','technological', 'Instant access from any device from mobile to laptop')
-				+step('rise','technological', 'Instant access from any device from mobile to laptop')
+				+step('tablet','technological', 'Instant access from any device from mobile to laptop')
+				+step('rise','constant growth', 'Many ears of constant growth and positive feedback')
+				+step('shuffl','variety', 'Individual approach')
 		
 		block
