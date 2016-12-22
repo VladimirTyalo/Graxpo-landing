@@ -78,7 +78,7 @@ container()
 
 
 // title with uderscores in left or middle or rihght
-title(left = true, middle = false, right = false) 
+title(left = true, middle = false, right = false, uderscoreColor = color-font-title) 
 	margin-top 0
 	margin-bottom 2em
 	position relative
@@ -89,14 +89,12 @@ title(left = true, middle = false, right = false)
 	font-family Roboto
 	letter-spacing 3px
 	
-	
-
 	&::after
 		content ''
 		position absolute
 		width 2em
 		height 3px
-		background color-font-title
+		background uderscoreColor
 		bottom -1em
 
 		if left 
@@ -110,8 +108,18 @@ title(left = true, middle = false, right = false)
 			right 0
 		
 			
+section-title()
+	&__title
+		title(false, true)
+		text-align center
 
-		 
+	&__text
+		font-family OpenSans
+		font-size(14px)
+		width 548px
+		margin 50px auto
+		text-align center
+
 			
 
 
