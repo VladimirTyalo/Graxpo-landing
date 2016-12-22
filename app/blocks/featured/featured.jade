@@ -1,0 +1,16 @@
+mixin image(src, alt)
+	+e.img-wrapper
+		+e.IMG(src=src, alt=alt).img
+		+e.A.btn-view View Details
+
+mixin featured()
+	+b.featured&attributes(attributes)
+		+e.container
+			+e.H3.title OUR FEATURED WORK
+			+e.P.description Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text 
+			+e.details-wrapper
+				+image('assets/images/coffe-shop.jpg', 'coffe shop')
+				+image('assets/images/shop-details.jpg', 'shop details')
+				+image('assets/images/clothing-shop.jpg', 'clothing shop')
+				
+		block
