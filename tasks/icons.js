@@ -5,14 +5,10 @@ import rename from 'gulp-rename';
 import plumber from 'gulp-plumber';
 import errorHandler from 'gulp-plumber-error-handler';
 import path from 'path';
-import rsp from 'remove-svg-properties';
 
 gulp.task('icons', () => (
     gulp.src('app/icons/**/*.svg')
     .pipe(plumber({ errorHandler: errorHandler(`Error in 'icons' task`) }))
-    .pipe(rsp.stream.remove({
-        // properties: ['fill', 'stroke', 'color']
-    }))
     .pipe(svgSymbols({
         title: false,
         id: 'icon_%f',

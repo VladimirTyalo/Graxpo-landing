@@ -4,10 +4,11 @@ include ../page/page
 include ../scripts/scripts
 include ../dids/dids
 include ../views/views
-
+include ../three-steps/three-steps
 
 include ../header/header
 include ../about/about
+
 
 doctype html
 html(lang='ru')
@@ -18,6 +19,7 @@ html(lang='ru')
 		+about
 		+dids
 		+views
-			
+		+three-steps
+		
 		block content
 		+scripts(['app.min.js'])
