@@ -3,7 +3,7 @@ include ../scroll-button/scroll-button
 mixin menu-item(content, link, target)
 	- var href = link || '#'
 	- var target = target || '_self'
-	
+
 	+e.LI.menu-item
 		+e.A.menu-link(href=href, target=target) #{content}
 
@@ -30,7 +30,7 @@ mixin header()
 			+e.IMG.thing_juice(src='assets/images/juice.png', alt='juice')
 			+e.IMG.thing_mouse(src='assets/images/mouse.png', alt='mouse')
 			+e.IMG.thing_pen-holder(src='assets/images/pen-holder.png', alt='pen-holder')
-			
-			//- +scroll-button
+
+			+scroll-button
 
 		block

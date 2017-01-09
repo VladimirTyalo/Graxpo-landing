@@ -1,0 +1,9 @@
+include ../common-mixins
+include ../categories-slider/categories-slider
+
+mixin porfolio()
+	+b.porfolio&attributes(attributes)
+		+e.container
+			+title("Portfolio", "Lorem Ipsum is simply dummy text of the printing and typesetting been the industry's standard dummy text")
+			+categories-slider
+		block

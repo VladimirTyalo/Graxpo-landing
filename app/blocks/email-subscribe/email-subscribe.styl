@@ -1,0 +1,79 @@
+.email-subscribe
+	display block
+
+
+	placeholder(white, black)
+
+	&__container
+		container()
+		height 300px
+		z-index 20
+		&::before
+			content ''
+			display inline-block
+			vertical-align middle
+			height 100%
+
+
+
+	info(white)
+
+	&__info-wrapper
+		display inline-block
+		vertical-align top
+		width 50%
+		padding 2rem 5rem
+
+		& > *::after
+				display none
+
+		^[0]:hover & > *
+			 color black
+
+
+	&__subscribe
+		display inline-block
+		vertical-align middle
+		width 40%
+		font-size 0
+		border 2px solid white
+
+		^[0]:hover &
+			border 2px solid black
+
+	&__input
+		width 55%
+		font-size 16px
+		line-height 40px
+		margin: 0
+		display inline-block
+		vertical-align: bottom
+		border none
+		background transparent
+		padding 0 10px
+		color white
+
+		^[0]:hover &
+			color black
+
+	&__button
+		width 35%
+		font-size 25px
+		text-transform uppercase
+		margin 0
+		border none
+		border-left 2px solid white
+		line-height 40px
+		display inline-block
+		vertical-align middle
+		background transparent
+		color white
+		padding 0px 1.5em
+
+		^[0]:hover &
+			border-left 2px solid black
+			color black
+
+
+
+	fading-background('../images/bg-keyboard.jpg', bg-keep-explore, 0.9)

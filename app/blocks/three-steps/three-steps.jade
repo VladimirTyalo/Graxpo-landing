@@ -1,3 +1,5 @@
+include ../common-mixins
+
 mixin step(iconName, title, text)
 	+e.DIV.step
 		+e.icon-wrapper
@@ -8,11 +10,10 @@ mixin step(iconName, title, text)
 mixin three-steps()
 	+b.three-steps&attributes(attributes)
 		+e.container
-			+e.H3.title Three Simple Steps 
-			+e.P.description Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text 
+			+title('Three Simple Steps', "Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text")
 			+e.DIV.steps
 				+step('tablet','technological', 'Instant access from any device from mobile to laptop')
 				+step('rise','constant growth', 'Many ears of constant growth and positive feedback')
 				+step('shuffl','variety', 'Individual approach')
-		
+
 		block

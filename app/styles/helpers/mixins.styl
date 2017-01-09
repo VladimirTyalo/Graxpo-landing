@@ -47,7 +47,7 @@ retinaBackground($image, $ext = 'png') {
 
 font-size(font-size = 16px, line-height = 1)
 	font-size  font-size // px fallback
-	font-size  unit((font-size / 16), rem) 
+	font-size  unit((font-size / 16), rem)
 	line-height line-height
 
 
@@ -70,7 +70,8 @@ relative-width(child, parent)
 
 
 // wrapper for section content
-container() 
+container()
+	position relative
 	margin 0 auto
 	padding 60px 0
 	display block
@@ -78,7 +79,7 @@ container()
 
 
 // title with uderscores in left or middle or rihght
-title(left = true, middle = false, right = false, uderscoreColor = color-font-title) 
+title(left = true, middle = false, right = false, uderscoreColor = color-font-title)
 	margin-top 0
 	margin-bottom 2em
 	position relative
@@ -88,7 +89,7 @@ title(left = true, middle = false, right = false, uderscoreColor = color-font-ti
 	text-transform uppercase
 	font-family Roboto
 	letter-spacing 3px
-	
+
 	&::after
 		content ''
 		position absolute
@@ -97,29 +98,112 @@ title(left = true, middle = false, right = false, uderscoreColor = color-font-ti
 		background uderscoreColor
 		bottom -1em
 
-		if left 
+		if left
 			left 0
 
 		if middle
 			left 50%
 			transform translate(-50%)
 
-		if right 
+		if right
 			right 0
-		
-			
-section-title()
+
+
+section-title(color = color-font-title )
 	&__title
 		title(false, true)
-		text-align center
+		font-size(20px)
+		text-align: center
+		margin-bottom 40px
+		color color
 
-	&__text
+	&__description
 		font-family OpenSans
 		font-size(14px)
-		width 548px
-		margin 50px auto
 		text-align center
+		relative-width(550, 1365)
+		margin auto
+		margin-bottom 40px
+		color color
 
-			
+info(color)
+	&__info-wrapper
+		padding 5.3rem 7rem
+		flex 0 1 50%
+
+	&__info-title
+		title(true, false, false, white)
+		color color
+
+	&__info-description
+		color color
+		font-size(14px)
 
 
+fading-background(img-url, color = bg-keep-explore, opacity = 0.9)
+	position relative
+
+	&__overlay
+		position absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%;
+		background: red
+		opacity: 0.9
+		transition: 1s
+		z-index: 10
+
+		^[-1]:hover &
+			opacity: 0
+
+	&__background
+		position absolute
+		width 100%
+		min-height 100%
+		top 0
+		left 0
+		background-image url(img-url)
+		//background-size cover
+		z-index 1
+
+		^[-1]:hover &
+			opacity: 1
+
+
+placeholder(color = black, color-focus = grey, bg = transparent, bg-focus = transparent)
+
+	input::-webkit-input-placeholder {
+		color: color
+	}
+
+	input:focus::-webkit-input-placeholder {
+		color: color-focus
+	}
+
+	/* Firefox < 19 */
+	input:-moz-placeholder {
+		color: color
+	}
+
+	input:focus:-moz-placeholder {
+		color: color-focus
+	}
+
+	/* Firefox > 19 */
+	input::-moz-placeholder {
+		color: color
+	}
+
+	input:focus::-moz-placeholder {
+		color: color-focus
+	}
+
+	/* Internet Explorer 10 */
+	input:-ms-input-placeholder {
+		color: color
+	}
+
+	input:focus:-ms-input-placeholder {
+		color: color-focus
+	}

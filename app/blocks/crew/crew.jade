@@ -1,0 +1,21 @@
+include ../common-mixins
+
+mixin card(imgSrc, name, pos, text)
+	+e.crew-card&attributes(attributes)
+		+e.img-wrapper
+			+e.IMG(src=imgSrc, alt=name)
+			+e.text
+		+e.name #{name}
+		+e.pos  #{pos}
+
+mixin crew()
+	+b.crew&attributes(attributes)
+		+e.container
+			+title("Meet out crew", "Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text ")
+			+e.crew-cards
+				+card('../assets/images/person-hasan.jpg', 'IBN HASAN', 'CEO', "I am a professional CEO")
+				+card('../assets/images/person-hasan.jpg', 'IBN HASAN', 'CEO', "I am a professional CEO")
+				+card('../assets/images/person-hasan.jpg', 'IBN HASAN', 'CEO', "I am a professional CEO")
+				+card('../assets/images/person-hasan.jpg', 'IBN HASAN', 'CEO', "I am a professional CEO")
+
+		block

@@ -1,0 +1,13 @@
+include ../common-mixins
+
+mixin email-subscribe()
+	+b.email-subscribe&attributes(attributes)
+		+e.container
+			+info("Subscribe to update", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam")
+			+e.FORM.subscribe
+				+e.INPUT.input(placeholder='Enter email address')
+				+e.BUTTON.button Subscribe
+		+e.overlay
+		+e.background
+
+		block

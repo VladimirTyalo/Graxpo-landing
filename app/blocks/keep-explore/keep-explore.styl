@@ -1,2 +1,35 @@
 .keep-explore
 	display block
+	background #313131
+	position relative
+	min-height 390px
+
+	&__container
+		container()
+		text-align center
+
+
+	&__title
+		position relative
+		font-size(30px)
+		text-align center
+		color white
+		margin-bottom 20px
+		margin-top 80px
+		z-index 15
+
+	&__subtitle
+		position relative
+		font-size(20px)
+		text-align center
+		color white
+		display block
+		margin-bottom 30px
+		z-index 15
+
+	fading-background('../images/buildings.jpg', bg-keep-explore, 0.9)
+
+	&__btn
+		position relative
+		z-index 15
+
