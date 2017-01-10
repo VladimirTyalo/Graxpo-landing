@@ -1,0 +1,21 @@
+include ../common-mixins
+
+mixin post(imgSrc, title, author, description, date)
+	+e.post
+		+e.post-img(src=imgSrc, alt=title)
+		+e.info
+			+e.info-title #{title}
+			+e.info-author #{author}
+			+e.info-description #{description}
+			+e.info-date #{date}
+
+mixin latest-blog()
+	+b.latest-blog&attributes(attributes)
+		+e.container
+			+title("Latest Blog", "Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text ")
+			+e.posts
+				+post("assets/images/news-car.jpg", "The winter tal's", "Raf Redwan", "lorem inpsu mdolrorsf aoasdfsad sa sd ", "12, september 2015")
+				+post("assets/images/news-car.jpg", "The winter tal's", "Raf Redwan", "lorem inpsu mdolrorsf aoasdfsad sa sd ", "12, september 2015")
+
+
+		block
