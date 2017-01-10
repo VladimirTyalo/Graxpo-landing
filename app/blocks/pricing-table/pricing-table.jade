@@ -1,0 +1,18 @@
+include ../common-mixins
+
+mixin card(title, descList)
+	+e.ARTICLE.card
+		+e.title #{title}
+		- for desc in descList
+				+e.record #{desc}
+
+
+mixin pricing-table()
+	+b.pricing-table&attributes(attributes)
+		+e.container
+			+title('Pricing table', "Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text ")
+			+e.cards
+				- var description = ['5 users', 'Unlimited Forums','X']
+				+card('Bsic', )
+
+		block
