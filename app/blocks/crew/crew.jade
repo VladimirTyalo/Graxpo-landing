@@ -5,7 +5,7 @@ include ../icon/icon
 mixin card(imgSrc, name, pos, text)
 	+e.crew-card&attributes(attributes)
 		+e.img-wrapper
-			+e.IMG(src=imgSrc, alt=name)
+			+e.IMG.img(src=imgSrc, alt=name)
 			+e.text-wrapper
 				+e.P.text #{text}
 				+e.socials
