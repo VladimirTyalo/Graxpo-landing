@@ -1,0 +1,24 @@
+include ../common-mixins
+include ../icon/icon
+
+mixin contacts()
+	+b.contacts&attributes(attributes)
+		+e.container
+			+title('Get in touch with us', 'Contacts us in any time and any way 24/7')
+			+e.wrapper
+				+e.FORM.form(action='#')
+					+e.INPUT.input._name(placeholder='Your Name')
+					+e.INPUT.input._email(placeholder='Email Address')
+					+e.TEXTAREA.message(rows='15' placeholder='Message')
+					+e.BUTTON.btn Submit Now
+				+e.info
+					+e.info-item
+						+e.text 65,Prothemers Tower-1200 <br/>D Block Comilla, Bangladesh
+						+icon('pin-point', false)
+					+e.info-item
+						+e.text myaddress@gmail.com
+						+icon('letter', false)
+					+e.info-item
+						+icon('phone', false)
+						+e.text +79202223455
+		block

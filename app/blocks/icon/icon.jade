@@ -11,5 +11,5 @@ mixin icon(iconName, isBlock)
 		svg&attributes(attributes)
 			use(xlink:href='#icon_#{iconName}')
 	else
-		+e('svg')&attributes(attributes)
+		+e.SVG.icon&attributes(attributes)
 			use(xlink:href='#icon_#{iconName}')
