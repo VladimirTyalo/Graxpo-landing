@@ -2,7 +2,7 @@ include ../common-mixins
 
 mixin image(src, alt)
 	+e.img-wrapper
-		+e.IMG(src=src, alt=alt).img
+		+e.IMG.img(src=src, alt=alt)
 		+e.A.btn-view View Details
 
 mixin featured()
