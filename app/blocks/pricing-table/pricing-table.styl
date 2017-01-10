@@ -5,4 +5,36 @@
 	&__container
 		container()
 
+	&__price-cards
+		center()
+
+	&__price-card
+		column(0.27, 0, 3, 9%)
+		text-align center
+		padding 25px 0
+		border-radius 1em
+		border 1px solid grey
+
+		&:hover
+			box-shadow 1px 0 12px 0 #c8c8c8
+
+
+	&__price-plan
+		font-size(20px)
+		font-family Roboto
+		text-transform uppercase
+		margin-bottom: 10px
+
+	&__record
+		font-size(13px)
+		font-family OpenSans
+		padding 10px 0
+		border-top 1px solid grey
+
+		&:last-of-type
+			border-bottom 1px solid grey
+
+	&__btn
+		btn(13px)
+		margin-top 20px
 
