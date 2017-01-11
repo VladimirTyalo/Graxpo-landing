@@ -14,6 +14,18 @@ import errorHandler from 'gulp-plumber-error-handler';
 
 const isDebug = process.env.NODE_ENV !== 'production';
 
+// autoprefixer options for bootstrap-stylus 3.3.7
+const browsers = [
+	'Android 2.3',
+	'Android >= 4',
+	'Chrome >= 20',
+	'Firefox >= 24',
+	'Explorer >= 8',
+	'iOS >= 6',
+	'Opera >= 12',
+	'Safari >= 6'
+];
+
 gulp.task('styles', () => (
 	gulp.src('app/styles/*.styl')
 		.pipe(plumber({errorHandler: errorHandler(`Error in \'styles\' task`)}))
@@ -22,7 +34,7 @@ gulp.task('styles', () => (
 			use: [
 				importIfExist(),
 				rupture(),
-				autoprefixer()
+				autoprefixer({browsers: browsers})
 			],
 			'include css': true
 		}))
