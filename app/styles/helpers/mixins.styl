@@ -216,3 +216,82 @@ placeholder(color = black, color-focus = grey, bg = transparent, bg-focus = tran
 	input:focus:-ms-input-placeholder {
 		color: color-focus
 	}
+
+
+//paralax() {
+//	perspective: 1px;
+//	height: 100vh;
+//	overflow-x: hidden;
+//	-webkit-overflow-scrolling: touch;
+//	scrolling: touch;
+//}
+//
+//paralax-group()
+//	transform-style: preserve-3d;
+//
+//paralax-layer(side = 'back', top = auto, right = auto, bottom = auto, left = auto)
+//	position absolute
+//	if top != auto
+//		top top
+//	if right != auto
+//		right right
+//
+//	if bottom != auto
+//		bottom bottom
+//	if left != auto
+//		left left
+//
+//	if side == 'back'
+//		paralax-back()
+//	if side == 'front'
+//		paralax-front()
+//
+//paralax-front()
+//	position absolute
+//	z-index 2
+//	transform translateZ(0)
+//
+//paralax-back() {
+////This block will move slower because it’s in the "back"
+//	transform: translateZ(-1px) scale(2);
+//	position: relative;
+//}
+
+
+paralax-body-setup(){
+// move scroll  from html to body tag (using overflow)
+// and set the perspective to the body
+
+	html {
+		overflow: hidden;
+	}
+	body {
+		overflow: auto;
+		height: 100vh;
+		perspective: $perspective;  // global variable also will need to culculate scale
+		-webkit-overflow-scrolling: touch; // for iOS devices
+		perspective-origin-x: 100%;
+	}
+}
+
+paralax-group() {
+   transform-style: perserve-3d;
+}
+
+paralax-item(deep = 0, z-index = 0, position = relative, top = 0, left = 0,  width = 0, height = 0) {
+// The scale factor can be calculated with 1 + (translateZ * -1) / perspective
+	$deep = remove-unit(deep);
+	$persp = remove-unit($perspective);
+	$scale = (1 + ($deep * -1) / $persp);
+	$aspect-ratio = ((height / width) * 100)vw;
+	$top = top + (-2) * (100vh - $aspect-ratio) / 4;
+	top: $top;
+	left: left;
+	width: (width)px;
+	height: (height)px;
+	transform: translateZ(deep) scale($scale);
+	z-index: z-index;
+
+
+	transform-origin-x: 100%;
+}

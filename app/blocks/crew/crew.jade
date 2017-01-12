@@ -17,7 +17,7 @@ mixin card(imgSrc, name, pos, text)
 		+e.pos  #{pos}
 
 mixin crew()
-	+b.crew&attributes(attributes)
+	+b.crew&attributes(attributes)#teams
 		+e.container
 			+title("Meet out crew", "Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text ")
 			+e.crew-cards

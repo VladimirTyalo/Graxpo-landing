@@ -12,7 +12,7 @@ mixin post(imgSrc, title, author, description, date)
 				+icon('calendar', false).icon
 
 mixin latest-blog()
-	+b.latest-blog&attributes(attributes)
+	+b.latest-blog&attributes(attributes)#blog
 		+e.container
 			+title("Latest Blog", "Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text ")
 			+e.posts

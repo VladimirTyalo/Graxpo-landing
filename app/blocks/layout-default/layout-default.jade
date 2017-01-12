@@ -20,28 +20,27 @@ include ../footer/footer
 include ../header/header
 include ../about/about
 
-
 doctype html
 html(lang='ru')
-	include ../head/head
-	+page
-		include ../icon/icon.svg
-		+header
-		+about
-		+dids
-		+views
-		+three-steps
-		+featured
-		+service
-		+keep-explore
-		+porfolio
-		+email-subscribe
-		+crew
+include ../head/head
++page
+	include ../icon/icon.svg
+	+header
+	+about
+	+dids
+	+views
+	+three-steps
+	+featured
+	+service
+	+keep-explore
+	+porfolio
+	+email-subscribe
+	+crew
 
-		+latest-blog
-		+pricing-table
-		+contacts
-		+footer
+	+latest-blog
+	+pricing-table
+	+contacts
+	+footer
 
-		block content
-		+scripts(['app.min.js'])
+	block content
+	+scripts(['app.min.js'])

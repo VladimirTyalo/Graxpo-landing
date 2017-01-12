@@ -3,12 +3,11 @@ include ../scroll-button/scroll-button
 mixin menu-item(content, link, target)
 	- var href = link || '#'
 	- var target = target || '_self'
-
 	+e.LI.menu-item
 		+e.A.menu-link(href=href, target=target) #{content}
 
 mixin header()
-	+b.HEADER.header&attributes(attributes)
+	+b.HEADER.header&attributes(attributes)#home
 		+e.DIV.container
 			+e.IMG.logo(src='assets/images/logo.png', alt='логотип Graxpo')
 			+e.NAV.navigation
@@ -23,13 +22,15 @@ mixin header()
 
 			+e.H1.title HELLO, WE’RE PROTHEMERS
 				+e.SPAN.caption FRESH PREMIMIUM QUALITY PSD TEMPLATE
+			+e.img-wrapper
+				+e.IMG.thing_headphones(src='assets/images/headphones.png', alt='headphones')
+				+e.IMG.thing_pencils(src='assets/images/pencils.png', alt='pencils')
+				// paralax group
+				+e.IMG.thing_glasses(src='assets/images/glasses.png', alt='glasses')
 
-			+e.IMG.thing_headphones(src='assets/images/headphones.png', alt='headphones')
-			+e.IMG.thing_pencils(src='assets/images/pencils.png', alt='pencils')
-			+e.IMG.thing_glasses(src='assets/images/glasses.png', alt='glasses')
-			+e.IMG.thing_juice(src='assets/images/juice.png', alt='juice')
-			+e.IMG.thing_mouse(src='assets/images/mouse.png', alt='mouse')
-			+e.IMG.thing_pen-holder(src='assets/images/pen-holder.png', alt='pen-holder')
+				+e.IMG.thing_juice(src='assets/images/juice.png', alt='juice')
+				+e.IMG.thing_mouse(src='assets/images/mouse.png', alt='mouse')
+				+e.IMG.thing_pen-holder(src='assets/images/pen-holder.png', alt='pen-holder')
 
 			+scroll-button
 

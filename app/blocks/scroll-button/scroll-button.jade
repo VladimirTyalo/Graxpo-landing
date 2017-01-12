@@ -1,6 +1,8 @@
+include ../icon/icon
+
 mixin scroll-button()
 	+b.scroll-button&attributes(attributes)
-		+e.DIV.icon
+		+icon('mouse',false)
 		+e.DIV.text Scroll Down
 
 		block

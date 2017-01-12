@@ -6,10 +6,12 @@
 //- 		+e('svg')&attributes(attributes)
 //- 			use(xlink:href='/assets/images/icon.svg#icon_#{iconName}')
 
-mixin icon(iconName, isBlock)
+mixin icon(iconName, isBlock, width, height)
+	- var width = width || 30
+	- var height = height || 30
 	if isBlock
-		svg&attributes(attributes)
+		svg(width = width, height = height)
 			use(xlink:href='#icon_#{iconName}')
 	else
-		+e.SVG.icon&attributes(attributes)
+		+e.SVG(width = width, height = height).icon
 			use(xlink:href='#icon_#{iconName}')
