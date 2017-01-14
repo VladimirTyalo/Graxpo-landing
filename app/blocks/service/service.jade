@@ -3,11 +3,13 @@ include ../common-mixins
 mixin service()
 	+b.service&attributes(attributes)#service
 		+title("OUR BEST SERVICE", "orem ipsum dolor sit amet, consectetur adipisicing elit. Odio, aut dolorem alias eveniet quaerat eum.")
-		+e.content-wrapper
-			+e.IMG(src='assets/images/basiness-meeting.jpg', alt='notebook ')
-			+info('Great Work', ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolore aut tenetur totam cum minima nostrum eveniet animi natus. Similique.')
-			+info('Great Work', ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolore aut tenetur totam cum minima nostrum eveniet animi natus. Similique.')
-			+e.IMG(src='assets/images/calculator.jpg', alt='notebook ')
-			+e.IMG(src='assets/images/conference.jpg', alt='notebook ')
-			+info('Great Work', ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolore aut tenetur totam cum minima nostrum eveniet animi natus. Similique.')
+		+e.service-wrapper
+			+e.container
+				+e.content-wrapper
+					+e.IMG.img-left(src='assets/images/basiness-meeting.jpg', alt='notebook ')
+					+info('Great Work', ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolore aut tenetur totam cum minima nostrum eveniet animi natus. Similique.')
+					+info('Great Work', ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolore aut tenetur totam cum minima nostrum eveniet animi natus. Similique.')
+					+e.IMG.img-right(src='assets/images/calculator.jpg', alt='notebook ')
+					+e.IMG.img-left(src='assets/images/conference.jpg', alt='notebook ')
+					+info('Great Work', ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolore aut tenetur totam cum minima nostrum eveniet animi natus. Similique.')
 		block

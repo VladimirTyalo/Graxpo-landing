@@ -1,16 +1,35 @@
 .service
 	display block
 	margin-top 60px
+
 	section-title(color-font-title)
+
+	&__container
+		container()
+
+	&__service-wrapper
+		background red
 
 	&__content-wrapper
 		display flex
 		flex-flow row wrap
 		justify-content space-between
-		background red
 
-
-	info(white)
 
 	img
-		flex 0 1 40%
+		opacity:0
+		transition: all .3s
+
+
+
+	&__img-left
+		transform: translateX(-30%) scale(0.95);
+
+	&__img-right
+		transform: translateX(30%) scale(0.95);
+
+	&__img_active
+		opacity 1 !important
+		transform: translateX(0%) scale(1) !important
+
+	info(white)
