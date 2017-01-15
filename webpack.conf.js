@@ -61,7 +61,8 @@ export default function makeWebpackConfig({
             }, eslint && {
                 test: /\.js$/,
                 loader: 'eslint-loader',
-                exclude: /node_modules/
+								include: ['app/scripts', '!app/scripts/vendor'],
+                // exclude: [/node_modules/, /app\/scripts\/vendor/]
             }, {
                 test: require.resolve('jquery'),
                 loader: 'expose?$!expose?jQuery'
