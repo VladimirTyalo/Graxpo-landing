@@ -1,0 +1,23 @@
+include ../common-mixins
+
+mixin slide(src, alt)
+	div.swiper-slide
+		div.swiper-slide-container
+			+title('testimonials', 'what our client say')
+			img.swiper-avatar(src=src, alt=alt)
+			p.swiper-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,m quia.
+			span.swiper-author Raf Redwan
+	block
+
+
+mixin slider()
+	div.swiper-container&attributes(attributes)
+		div.swiper-wrapper
+			+slide('assets/images/avatar-man.png','Raf Redwan')
+			+slide('assets/images/avatar-man.png','Raf Redwan')
+			+slide('assets/images/avatar-man.png','Raf Redwan')
+			+slide('assets/images/avatar-man.png','Raf Redwan')
+
+		div.swiper-pagination
+
+		block

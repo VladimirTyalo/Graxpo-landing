@@ -3,11 +3,14 @@ import $ from 'jquery';
 
 import './smooth-scroll';
 import './side-nav';
-
+import {Slider} from '../blocks/slider/slider';
 
 $(() => {
 	svg4everybody();
 
+	const s = new Slider();
+	s.print();
+	s.init();
 
 });
 
