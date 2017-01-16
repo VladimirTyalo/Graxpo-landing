@@ -1,15 +1,15 @@
 .service-card
 	position relative
 	flex 0 1 49%
-	
+
 	margin-bottom: 2.1rem
 	margin-right: 2%
-	padding 3.3rem 3rem 3.3rem 10rem 
+	padding 3.3rem 3rem 3.3rem 10rem
 	border-radius 0.5em
 	transition 0.2s
 	border 3px solid #ebebeb
 
-	&:nth-of-type(2n) 
+	&:nth-of-type(2n)
 		margin-right 0
 
 	&__icon-wrapper
@@ -34,10 +34,10 @@
 		title(true)
 		text-align left
 
-	&__text 
+	&__text
 		text-align left
-		
-	&:hover 
+
+	&:hover
 		background #e84c3d
 
 	&:hover .service-card__icon-wrapper
@@ -46,7 +46,7 @@
 	&:hover .service-card__icon
 		fill red
 
-	&:hover .service-card__title::after 
+	&:hover .service-card__title::after
 		background white
 
 	&:hover .service-card__title,
@@ -54,3 +54,7 @@
 		color white
 
 
+
+@media (max-width: 900px)
+	.service-card
+		flex 0 0 100%

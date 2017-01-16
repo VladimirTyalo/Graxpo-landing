@@ -3,6 +3,11 @@
 
 
 	placeholder(white, black)
+	fading-background('../images/bg-keyboard.jpg', bg-keep-explore, 0.9)
+
+	&__background
+		background-size cover
+		bakcground-repeat no-repeat
 
 	&__container
 		container()
@@ -77,4 +82,21 @@
 
 
 
-	fading-background('../images/bg-keyboard.jpg', bg-keep-explore, 0.9)
+
+
+
+@media (max-width: 1100px)
+	.email-subscribe
+		&__info-wrapper
+			width 100%
+
+		&__container
+			min-height 300px
+
+
+		&__container::before
+			display none
+
+		&__subscribe
+			width 100%
+			margin 0 5em

@@ -21,6 +21,7 @@ $(() => {
 
 		// viewport height
 		const height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		const width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
 		// section service images
 		const $serviceImg = $('.service img');
@@ -30,7 +31,6 @@ $(() => {
 
 		function sideMenuOnScroll() {
 			const scrollTop = body.scrollTop;
-
 			if (scrollTop > MENU_SHOW_SCROLL) {
 				$menu.addClass(SIDE_MENU_CLASS)
 			}
@@ -58,8 +58,8 @@ $(() => {
 			function addCounter() {
 				// if counter is already running return
 
-				if(prevMenuState) return;
-				$views.each( (index, el) => {
+				if (prevMenuState) return;
+				$views.each((index, el) => {
 					const to = Math.round(Math.random() * 1000) + 500;
 					viewsHandlers[index] = countUp(index, el, 0, to, 0);
 				});
@@ -67,8 +67,8 @@ $(() => {
 			}
 
 			function removeCounter() {
-				if(!prevMenuState) return;
-				$views.each( (index, el) => {
+				if (!prevMenuState) return;
+				$views.each((index, el) => {
 					// clearTimeout(viewsHandlers[index]);
 					clearInterval(viewsHandlers[index]);
 				});
@@ -94,7 +94,7 @@ $(() => {
 			let step = Math.round(Math.abs((to - from) / 100));
 
 			viewsHandlers[index] = setInterval(function f() {
-				if(counter > to * 0.8) step = 1;
+				if (counter > to * 0.8) step = 1;
 				if (counter > to) {
 					clearInterval(viewsHandlers[index]);
 					return;

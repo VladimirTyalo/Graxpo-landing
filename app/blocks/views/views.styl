@@ -79,3 +79,19 @@
 
 .views:hover .views__background
 	opacity 1
+
+@media (max-width: 750px)
+	.views
+		&__item
+			display block
+			width: 100%
+			max-width: 100%
+
+		&__features
+			flex-wrap wrap
+
+		&__overlay
+			opacity 0.8 !important
+
+		&__background
+			opacity 1 !important
