@@ -8,7 +8,7 @@ mixin contacts()
 			+e.wrapper
 				+e.FORM.form(action='#')
 					+e.INPUT.input._name(placeholder='Your Name')
-					+e.INPUT.input._email(placeholder='Email Address')
+					+e.INPUT.input._email(placeholder='Email Address', type='email', required)
 					+e.TEXTAREA.message(rows='15' placeholder='Message')
 					+e.BUTTON.btn Submit Now
 				+e.info

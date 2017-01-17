@@ -8,7 +8,7 @@ include ../three-steps/three-steps
 include ../featured/featured
 include ../service/service
 include ../keep-explore/keep-explore
-//include ../porfolio/porfolio
+include ../porfolio/porfolio
 include ../email-subscribe/email-subscribe
 include ../crew/crew
 
@@ -23,25 +23,25 @@ include ../about/about
 
 doctype html
 html(lang='ru')
-include ../head/head
-+page
-	include ../icon/icon.svg
-	+header
-	+about
-	+dids
-	+views
-	+three-steps
-	+featured
-	+service
-	+keep-explore
-	//+porfolio
-	+email-subscribe
-	+crew
-	+slider
-	+latest-blog
-	+pricing-table
-	+contacts
-	+footer
+	include ../head/head
+	+page
+		include ../icon/icon.svg
+		+header
+		+about
+		+dids
+		+views
+		+three-steps
+		+featured
+		+service
+		+keep-explore
+		+porfolio
+		+email-subscribe
+		+crew
+		+slider
+		+latest-blog
+		+pricing-table
+		+contacts
+		+footer
 
 	block content
 	+scripts(['app.min.js'])

@@ -36,6 +36,7 @@
 		display flex
 		justify-content space-around
 		align-items stretch
+		flex-flow row wrap
 
 	&__item
 		position relative
@@ -80,6 +81,9 @@
 .views:hover .views__background
 	opacity 1
 
+
+
+
 @media (max-width: 750px)
 	.views
 		&__item
@@ -95,3 +99,13 @@
 
 		&__background
 			opacity 1 !important
+
+@media (max-width: 500px)
+	.views
+
+		&__features
+			flex-flow column nowrap
+
+		&__item
+			align-self center
+

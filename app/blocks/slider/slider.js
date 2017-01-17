@@ -1,11 +1,10 @@
-import $ from 'jquery'
 import Swiper from 'swiper';
 
 export function Slider() {
 	this.print = () => console.log('hi from slider');
 
 	this.init = () => {
-		var mySwiper = new Swiper('.swiper-container',
+		const mySwiper = new Swiper('.swiper-container',
 			{
 				// Optional parameters
 				paginationClickable: true,
@@ -18,6 +17,6 @@ export function Slider() {
 				nextButton: '.swiper-button-next',
 				prevButton: '.swiper-button-prev'
 			});
-
-	}
+		mySwiper;
+	};
 }

@@ -1,6 +1,6 @@
 // Clear the float on any element.
 clearfix()
-	&:after
+	&::after
 		display table
 		clear both
 		content ''
@@ -77,6 +77,10 @@ container(max-width = 1200px)
 	relative-width(1200, 1300)
 	max-width max-width
 
+	@media (max-width: 700px)
+		padding-top: 10px
+		padding-bottom: 10px
+
 
 // title with uderscores in left or middle or rihght
 title(left = true, middle = false, right = false, uderscoreColor = color-font-title)
@@ -88,6 +92,7 @@ title(left = true, middle = false, right = false, uderscoreColor = color-font-ti
 	font-size(20px)
 	text-transform uppercase
 	letter-spacing 3px
+
 
 	&::after
 		content ''
@@ -116,6 +121,8 @@ section-title(color = color-font-title )
 		margin-bottom 40px
 		color color
 
+
+
 	&__description
 		font-family OpenSans
 		font-size(14px)
@@ -124,6 +131,8 @@ section-title(color = color-font-title )
 		margin auto
 		margin-bottom 40px
 		color color
+		@media (max-width: 500px)
+			width: 70%
 
 info(color)
 	&__info-wrapper

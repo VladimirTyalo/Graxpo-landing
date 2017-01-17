@@ -53,8 +53,19 @@
 	&:hover .service-card__text
 		color white
 
-
-
 @media (max-width: 900px)
 	.service-card
-		flex 0 0 100%
+		padding 130px 20px 20px 20px
+
+		&__icon-wrapper
+			top 10px
+			left 50%
+			transform translateX(-50%)
+
+		&__content
+			width 100%
+
+
+@media (max-width: 600px)
+	.service-card
+		flex 1 0 100%

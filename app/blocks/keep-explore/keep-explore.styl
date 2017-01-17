@@ -4,6 +4,8 @@
 	position relative
 	min-height 390px
 
+	fading-background('../images/buildings.jpg', bg-keep-explore, 0.9)
+
 	&__container
 		container()
 		text-align center
@@ -28,7 +30,8 @@
 		z-index 15
 
 
-	fading-background('../images/buildings.jpg', bg-keep-explore, 0.9)
+	&__overlay
+		background rgba(0, 0, 0, 0.6)
 
 
 	&__overlay
@@ -38,5 +41,4 @@
 		position relative
 		z-index 15
 		btn(16px)
-
 

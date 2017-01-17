@@ -24,6 +24,16 @@
 		background transparent
 		border 2px solid grey
 
+		&:focus
+			border 2px solid #5b8064
+
+
+		&:focus:invalid {
+			/* insert your own styles for invalid form input */
+			-moz-box-shadow: none;
+			border 2px solid red
+		}
+
 
 	&__message
 		span()
@@ -31,6 +41,10 @@
 		padding: 5px
 		background transparent
 		border 2px solid grey
+		resize none
+
+		&:focus
+			border 2px solid #5b8064
 
 	&__btn
 		btn(14px)
@@ -57,3 +71,11 @@
 		font-size(14px)
 		line-height 2
 
+@media (max-width: 800px)
+	.contacts
+		&__form
+			span(1, 0, 0)
+			text-align center
+
+		&__info
+			span(1, 0, 0)

@@ -21,33 +21,37 @@ $(() => {
 
 		// viewport height
 		const height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-		const width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-
+		let width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 		// section service images
 		const $serviceImg = $('.service img');
 		let prevMenuState = false;
+		const BREAK_POINT = 902;
 
+		setSideMenuOnCondition(() => width < BREAK_POINT);
+
+		window.addEventListener('resize', throttle(() => {
+				width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+				setSideMenuOnCondition(() => width < BREAK_POINT);
+		}
+			, 300
+		));
 		window.addEventListener('scroll', throttle(scrollHandler, 300, {trailing: true}));
 
 		function sideMenuOnScroll() {
 			const scrollTop = body.scrollTop;
-			if (scrollTop > MENU_SHOW_SCROLL) {
-				$menu.addClass(SIDE_MENU_CLASS)
-			}
-			else {
-				$menu.removeClass(SIDE_MENU_CLASS);
-			}
+			// if viewport width lower then 800px show side menu instead of main
+			setSideMenuOnCondition(() => scrollTop > MENU_SHOW_SCROLL || width < 800);
 		}
 
 		function showImgOnScroll() {
 			$serviceImg.each((index, img) => {
 				// find image height
-				const height = img.offsetHeight;
+				const offsetHight = img.offsetHeight;
 
 				// set bound trigger line inside the img at 1/2
-				actionScrollTrigger(img, -height / 2,
+				actionScrollTrigger(img, -offsetHight / 2,
 					el => el.classList.add(SERVICE_ACTIVE_CLASS),
-					el => el.classList.remove(SERVICE_ACTIVE_CLASS))
+					el => el.classList.remove(SERVICE_ACTIVE_CLASS));
 			});
 		}
 
@@ -58,7 +62,9 @@ $(() => {
 			function addCounter() {
 				// if counter is already running return
 
-				if (prevMenuState) return;
+				if (prevMenuState) {
+					return;
+				}
 				$views.each((index, el) => {
 					const to = Math.round(Math.random() * 1000) + 500;
 					viewsHandlers[index] = countUp(index, el, 0, to, 0);
@@ -67,8 +73,10 @@ $(() => {
 			}
 
 			function removeCounter() {
-				if (!prevMenuState) return;
-				$views.each((index, el) => {
+				if (!prevMenuState) {
+					return;
+				}
+				$views.each((index) => {
 					// clearTimeout(viewsHandlers[index]);
 					clearInterval(viewsHandlers[index]);
 				});
@@ -88,13 +96,15 @@ $(() => {
 			countViewsOnScroll();
 		}
 
-		function countUp(index, el, from, to, duration) {
+		function countUp(index, el, from, to) {
 			const time = 0;
 			let counter = from;
 			let step = Math.round(Math.abs((to - from) / 100));
 
 			viewsHandlers[index] = setInterval(function f() {
-				if (counter > to * 0.8) step = 1;
+				if (counter > to * 0.8) {
+					step = 1;
+				}
 				if (counter > to) {
 					clearInterval(viewsHandlers[index]);
 					return;
@@ -129,7 +139,16 @@ $(() => {
 			}
 		}
 
-		// scroll one page down
+		function setSideMenuOnCondition(predicate) {
+			// if viewport width lower then 800px show side menu instead of main
+			if (predicate()) {
+				$menu.addClass(SIDE_MENU_CLASS);
+			} else {
+				$menu.removeClass(SIDE_MENU_CLASS);
+			}
+		}
+
+		// scroll one page down on click mouse icon
 		$(`.${SCROLL_DOWN}`).on('click', ev => {
 			ev.preventDefault();
 			window.scroll({top: height, left: 0, behavior: 'smooth'});
@@ -139,12 +158,12 @@ $(() => {
 		window.addEventListener('keydown', ev => {
 			const key = ev.keyCode || ev.which;
 			// if arrow up
-			if (key == 38) {
+			if (key === 38) {
 				window.scrollBy({top: -height, left: 0, behavior: 'smooth'});
 				return;
 			}
 			// if arrow down
-			if (key == 40) {
+			if (key === 40) {
 				window.scrollBy({top: height, left: 0, behavior: 'smooth'});
 				return;
 			}

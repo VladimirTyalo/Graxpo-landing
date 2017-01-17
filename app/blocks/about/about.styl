@@ -1,5 +1,4 @@
 .about
-	display inline-block
 	min-height 430px
 	width 100%
 
@@ -7,6 +6,7 @@
 	&__container
 		relative-width(1000, 1366)
 		container()
+		clearfix()
 
 	&__title
 		title(true, false)
@@ -31,6 +31,26 @@
 
 	&__btn
 		btn(20px)
+
+@media (max-width: 800px)
+	.about
+		&__description
+			span(1, 0, 0)
+
+		&__title
+			title(false, true, false)
+			width 80%
+			margin-left auto
+			margin-right auto
+
+		&__preview
+			span(1, 0, 0)
+			margin-top: 40px
+			text-align center
+
+		&__img
+			float: none
+			display: inline-block
 
 @media (max-width: 800px)
 	.about
