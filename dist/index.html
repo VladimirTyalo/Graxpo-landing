@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="imagetoolbar" content="no">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="google" value="notranslate">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link sizes="192x192" href="/favicon-192x192.png" rel="icon" type="image/png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="application-name" content="">
+		<meta name="msapplication-tooltip" content="">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/mstile-large.png">
+		<title>Graxpo</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<link href="/assets/styles/app.min.css?v=6e8084e" rel="stylesheet">
+	</head>
+
+	<body class="page">
+		<svg xmlns="http://www.w3.org/2000/svg" style="width:0; height:0; visibility:hidden;">
+			<symbol id="icon_calendar" viewBox="0 0 32 32">
+				<g>
+					<g id="calendar_1_">
+						<path d="M29.334,3H25V1c0-0.553-0.447-1-1-1s-1,0.447-1,1v2h-6V1c0-0.553-0.448-1-1-1s-1,0.447-1,1v2H9V1    c0-0.553-0.448-1-1-1S7,0.447,7,1v2H2.667C1.194,3,0,4.193,0,5.666v23.667C0,30.806,1.194,32,2.667,32h26.667    C30.807,32,32,30.806,32,29.333V5.666C32,4.193,30.807,3,29.334,3z M30,29.333C30,29.701,29.701,30,29.334,30H2.667    C2.299,30,2,29.701,2,29.333V5.666C2,5.299,2.299,5,2.667,5H7v2c0,0.553,0.448,1,1,1s1-0.447,1-1V5h6v2c0,0.553,0.448,1,1,1    s1-0.447,1-1V5h6v2c0,0.553,0.447,1,1,1s1-0.447,1-1V5h4.334C29.701,5,30,5.299,30,5.666V29.333z"
+							fill="#D80027" />
+						<rect x="7" y="12" width="4" height="3" fill="#D80027" />
+						<rect x="7" y="17" width="4" height="3" fill="#D80027" />
+						<rect x="7" y="22" width="4" height="3" fill="#D80027" />
+						<rect x="14" y="22" width="4" height="3" fill="#D80027" />
+						<rect x="14" y="17" width="4" height="3" fill="#D80027" />
+						<rect x="14" y="12" width="4" height="3" fill="#D80027" />
+						<rect x="21" y="22" width="4" height="3" fill="#D80027" />
+						<rect x="21" y="17" width="4" height="3" fill="#D80027" />
+						<rect x="21" y="12" width="4" height="3" fill="#D80027" /> </g>
+				</g>
+			</symbol>
+			<symbol id="icon_cross" viewBox="0 0 31.112 31.112">
+				<polygon points="31.112,1.414 29.698,0 15.556,14.142 1.414,0 0,1.414 14.142,15.556 0,29.698 1.414,31.112 15.556,16.97 
+	29.698,31.112 31.112,29.698 16.97,15.556 " />
+			</symbol>
+			<symbol id="icon_fb" viewBox="0 0 96.124 96.123">
+				<g>
+					<path d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"
+						fill="#D80027" /> </g>
+			</symbol>
+			<symbol id="icon_heart" viewBox="0 0 455 455">
+				<path d="M326.632,10.346c-38.733,0-74.991,17.537-99.132,46.92c-24.141-29.384-60.398-46.92-99.132-46.92  C57.586,10.346,0,67.931,0,138.714c0,55.426,33.05,119.535,98.23,190.546c50.161,54.647,104.728,96.959,120.257,108.626l9.01,6.769  l9.01-6.768c15.529-11.667,70.098-53.978,120.26-108.625C421.949,258.251,455,194.141,455,138.714  C455,67.931,397.414,10.346,326.632,10.346z M334.666,308.974c-41.259,44.948-85.648,81.283-107.169,98.029  c-21.52-16.746-65.907-53.082-107.166-98.03C61.236,244.592,30,185.717,30,138.714c0-54.24,44.128-98.368,98.368-98.368  c35.694,0,68.652,19.454,86.013,50.771l13.119,23.666l13.119-23.666c17.36-31.316,50.318-50.771,86.013-50.771  c54.24,0,98.368,44.127,98.368,98.368C425,185.719,393.763,244.594,334.666,308.974z"
+					fill="#D80027" />
+			</symbol>
+			<symbol id="icon_istagram" viewBox="0 0 48 48">
+				<g>
+					<g id="Instagram">
+						<path d="M5.583,13c-0.553,0-1-0.447-1-1V3c0-0.553,0.447-1,1-1s1,0.447,1,1v9C6.583,12.553,6.136,13,5.583,13z" fill="#D80027"
+						/>
+						<path d="M8.958,13c-0.553,0-1-0.447-1-1V2.25c0-0.553,0.447-1,1-1s1,0.447,1,1V12C9.958,12.553,9.511,13,8.958,13z" fill="#D80027"
+						/>
+						<path d="M12.333,13c-0.553,0-1-0.447-1-1V2.25c0-0.553,0.447-1,1-1s1,0.447,1,1V12C13.333,12.553,12.886,13,12.333,13z"
+							fill="#D80027" />
+						<path d="M37.292,48H11.917C4.344,48,0,44.014,0,37.062V12.125C0,4.873,4.27,0,10.625,0h27.584C42.918,0,48,4.524,48,11.834v25.083    C48,43.132,43.297,48,37.292,48z M10.625,2C4.259,2,2,7.454,2,12.125v24.938C2,44.449,7.393,46,11.917,46h25.375    C42.257,46,46,42.095,46,36.917V11.834C46,5.76,41.956,2,38.209,2H10.625z"
+							fill="#D80027" />
+						<path d="M23.999,15.25c-4.234,0-7.667,3.434-7.667,7.668c0,4.234,3.433,7.666,7.667,7.666c4.233,0,7.667-3.432,7.667-7.666    C31.666,18.684,28.232,15.25,23.999,15.25z M23.999,26.75c-2.117,0-3.834-1.716-3.834-3.833s1.717-3.834,3.834-3.834    s3.834,1.717,3.834,3.834S26.116,26.75,23.999,26.75z"
+							fill="#D80027" />
+						<path d="M23.999,35.084c-6.709,0-12.167-5.458-12.167-12.167S17.29,10.75,23.999,10.75s12.167,5.458,12.167,12.167    S30.708,35.084,23.999,35.084z M23.999,12.75c-5.606,0-10.167,4.561-10.167,10.167c0,5.606,4.561,10.167,10.167,10.167    c5.606,0,10.167-4.561,10.167-10.167C34.166,17.311,29.605,12.75,23.999,12.75z"
+							fill="#D80027" />
+						<rect x="32.999" y="14.92" width="14" height="2.16" fill="#D80027" />
+						<rect x="1.499" y="14.949" width="13.25" height="2.102" fill="#D80027" />
+						<path d="M41.333,10.133c0,1.215-0.985,2.201-2.202,2.201h-3.264c-1.217,0-2.202-0.986-2.202-2.201V6.867    c0-1.215,0.985-2.201,2.202-2.201h3.264c1.217,0,2.202,0.986,2.202,2.201V10.133z"
+							fill="#D80027" /> </g>
+				</g>
+			</symbol>
+			<symbol id="icon_letter" viewBox="0 0 612.074 612.074">
+				<g>
+					<path d="M612.074,132.141v-2.38c0-8.849-4.016-19.26-11.229-26.473l-0.818-0.818c0,0-0.818,0-0.818-0.818   c-1.636-1.636-3.198-2.38-4.833-4.016c-0.818,0-0.818-0.818-1.636-0.818c-1.636-0.818-4.016-1.636-5.652-2.38   c-0.818,0-0.818-0.818-1.636-0.818c-2.38-0.818-4.833-1.636-7.213-1.636c-0.818,0-0.818,0-1.636,0c-2.38,0-5.651-0.818-8.849-0.818   H43.427c-3.198,0-6.395,0-9.667,0.818c-0.818,0-1.636,0-2.38,0.818c-2.38,0.818-4.834,0.818-6.395,1.636   c-0.818,0-0.818,0.818-1.636,0.818c-1.636,0.818-4.016,1.636-5.652,2.38l-0.818,0.818c-1.636,0.818-3.198,2.38-4.834,3.198   c-0.818,0.818-1.636,1.636-2.38,2.38C4.016,110.428,0.818,117.715,0,125.746c0,0.818,0,0.818,0,1.636v357.384   c0,0.818,0,0.818,0,1.636c1.636,11.229,7.213,20.896,15.244,26.473c7.213,4.833,16.062,8.031,26.473,8.031H569.39c0,0,0,0,0.818,0   l0,0c2.38,0,5.651,0,8.031-0.818c0.818,0,0.818,0,1.636,0c2.38-0.818,4.834-0.818,6.395-1.636h0.818   c17.698-6.395,24.911-21.714,24.911-36.14v-2.38v-0.818v-0.818V134.521c0-0.818,0-0.818,0-1.636   C612.074,132.959,612.074,132.959,612.074,132.141z M560.69,120.913l-252.98,246.51l-57.854-56.218l0,0L51.459,120.838H560.69   V120.913z M29.819,475.099V140.991l187.095,179.882L29.819,475.099z M299.679,491.905H56.292l182.336-149.393l58.597,57.036   c2.38,2.38,4.834,3.198,7.213,4.016h0.818c0.818,0,0.818,0,1.636,0l0,0c0.818,0,1.636,0,1.636,0h0.818   c2.38-0.818,5.651-1.636,7.213-4.016l55.4-53.838l183.079,146.196H299.679z M582.329,475.843L394.417,324.07L582.329,140.99   V475.843z"
+						fill="#D80027" /> </g>
+			</symbol>
+			<symbol id="icon_like" viewBox="0 0 478.2 478.2">
+				<g>
+					<path d="M457.575,325.1c9.8-12.5,14.5-25.9,13.9-39.7c-0.6-15.2-7.4-27.1-13-34.4c6.5-16.2,9-41.7-12.7-61.5   c-15.9-14.5-42.9-21-80.3-19.2c-26.3,1.2-48.3,6.1-49.2,6.3h-0.1c-5,0.9-10.3,2-15.7,3.2c-0.4-6.4,0.7-22.3,12.5-58.1   c14-42.6,13.2-75.2-2.6-97c-16.6-22.9-43.1-24.7-50.9-24.7c-7.5,0-14.4,3.1-19.3,8.8c-11.1,12.9-9.8,36.7-8.4,47.7   c-13.2,35.4-50.2,122.2-81.5,146.3c-0.6,0.4-1.1,0.9-1.6,1.4c-9.2,9.7-15.4,20.2-19.6,29.4c-5.9-3.2-12.6-5-19.8-5h-61   c-23,0-41.6,18.7-41.6,41.6v162.5c0,23,18.7,41.6,41.6,41.6h61c8.9,0,17.2-2.8,24-7.6l23.5,2.8c3.6,0.5,67.6,8.6,133.3,7.3   c11.9,0.9,23.1,1.4,33.5,1.4c17.9,0,33.5-1.4,46.5-4.2c30.6-6.5,51.5-19.5,62.1-38.6c8.1-14.6,8.1-29.1,6.8-38.3   c19.9-18,23.4-37.9,22.7-51.9C461.275,337.1,459.475,330.2,457.575,325.1z M48.275,447.3c-8.1,0-14.6-6.6-14.6-14.6V270.1   c0-8.1,6.6-14.6,14.6-14.6h61c8.1,0,14.6,6.6,14.6,14.6v162.5c0,8.1-6.6,14.6-14.6,14.6h-61V447.3z M431.975,313.4   c-4.2,4.4-5,11.1-1.8,16.3c0,0.1,4.1,7.1,4.6,16.7c0.7,13.1-5.6,24.7-18.8,34.6c-4.7,3.6-6.6,9.8-4.6,15.4c0,0.1,4.3,13.3-2.7,25.8   c-6.7,12-21.6,20.6-44.2,25.4c-18.1,3.9-42.7,4.6-72.9,2.2c-0.4,0-0.9,0-1.4,0c-64.3,1.4-129.3-7-130-7.1h-0.1l-10.1-1.2   c0.6-2.8,0.9-5.8,0.9-8.8V270.1c0-4.3-0.7-8.5-1.9-12.4c1.8-6.7,6.8-21.6,18.6-34.3c44.9-35.6,88.8-155.7,90.7-160.9   c0.8-2.1,1-4.4,0.6-6.7c-1.7-11.2-1.1-24.9,1.3-29c5.3,0.1,19.6,1.6,28.2,13.5c10.2,14.1,9.8,39.3-1.2,72.7   c-16.8,50.9-18.2,77.7-4.9,89.5c6.6,5.9,15.4,6.2,21.8,3.9c6.1-1.4,11.9-2.6,17.4-3.5c0.4-0.1,0.9-0.2,1.3-0.3   c30.7-6.7,85.7-10.8,104.8,6.6c16.2,14.8,4.7,34.4,3.4,36.5c-3.7,5.6-2.6,12.9,2.4,17.4c0.1,0.1,10.6,10,11.1,23.3   C444.875,295.3,440.675,304.4,431.975,313.4z"
+						fill="#D80027" /> </g>
+			</symbol>
+			<symbol id="icon_monitor" viewBox="0 0 548.172 548.172">
+				<g>
+					<path d="M534.75,49.965c-8.945-8.945-19.694-13.422-32.261-13.422H45.681c-12.562,0-23.313,4.477-32.264,13.422   C4.471,58.913,0,69.663,0,82.226v310.633c0,12.566,4.471,23.315,13.417,32.265c8.951,8.945,19.702,13.414,32.264,13.414h155.318   c0,7.231-1.524,14.661-4.57,22.269c-3.044,7.614-6.09,14.273-9.136,19.981c-3.042,5.715-4.565,9.897-4.565,12.56   c0,4.948,1.807,9.24,5.424,12.847c3.615,3.621,7.898,5.435,12.847,5.435h146.179c4.949,0,9.233-1.813,12.848-5.435   c3.62-3.606,5.427-7.898,5.427-12.847c0-2.468-1.526-6.611-4.571-12.415c-3.046-5.801-6.092-12.566-9.134-20.267   c-3.046-7.71-4.569-15.085-4.569-22.128h155.318c12.56,0,23.309-4.469,32.254-13.414c8.949-8.949,13.422-19.698,13.422-32.265   V82.226C548.176,69.663,543.699,58.913,534.75,49.965z M511.627,319.768c0,2.475-0.903,4.613-2.711,6.424   c-1.81,1.804-3.952,2.707-6.427,2.707H45.681c-2.473,0-4.615-0.903-6.423-2.707c-1.807-1.817-2.712-3.949-2.712-6.424V82.226   c0-2.475,0.902-4.615,2.712-6.423c1.809-1.805,3.951-2.712,6.423-2.712h456.815c2.471,0,4.617,0.904,6.42,2.712   c1.808,1.809,2.711,3.949,2.711,6.423V319.768L511.627,319.768z"
+					/> </g>
+			</symbol>
+			<symbol id="icon_mouse" viewBox="0 0 210.414 210.414">
+				<g>
+					<g>
+						<g>
+							<path d="M105.207,0C66.532,0,35.069,31.45,35.069,70.104v70.21c0,38.653,31.463,70.1,70.138,70.1
+				c38.675,0,70.138-31.446,70.138-70.1v-70.21C175.345,31.45,143.881,0,105.207,0z M167.552,140.314
+				c0,34.357-27.968,62.307-62.345,62.307c-34.377,0-62.345-27.95-62.345-62.307v-70.21c0-34.357,27.968-62.311,62.345-62.311
+				c34.377,0,62.345,27.953,62.345,62.311V140.314z" />
+							<path d="M105.207,23.379c-2.152,0-3.897,1.743-3.897,3.897v35.286c0,2.154,1.745,3.897,3.897,3.897
+				c2.152,0,3.897-1.743,3.897-3.897V27.276C109.103,25.122,107.359,23.379,105.207,23.379z" /> </g>
+					</g>
+				</g>
+			</symbol>
+			<symbol id="icon_old-phone" viewBox="0 0 348.077 348.077">
+				<g>
+					<g>
+						<g>
+							<path d="M340.273,275.083l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518,0.744l-27.082,27.076     c-1.711-0.943-3.482-1.928-5.344-2.973c-17.102-9.476-40.509-22.464-65.14-47.113c-24.704-24.701-37.704-48.144-47.209-65.257     c-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149l8.936-8.947c11.097-11.1,11.403-28.826,0.721-39.521L73.39,8.194     C62.708-2.486,44.969-2.162,33.872,8.938l-15.15,15.237l0.414,0.411c-5.08,6.482-9.325,13.958-12.484,22.02     C3.74,54.28,1.927,61.603,1.098,68.941C-6,127.785,20.89,181.564,93.866,254.541c100.875,100.868,182.167,93.248,185.674,92.876     c7.638-0.913,14.958-2.738,22.397-5.627c7.992-3.122,15.463-7.361,21.941-12.43l0.331,0.294l15.348-15.029     C350.631,303.527,350.95,285.795,340.273,275.083z"
+								fill="#D80027" /> </g>
+					</g>
+				</g>
+			</symbol>
+			<symbol id="icon_pencil" viewBox="0 0 509.337 509.338">
+				<g>
+					<g>
+						<path d="M396.283,310.907c-3.809-1.52-7.143-0.853-9.996,1.998l-18.274,18.274c-1.711,1.708-2.573,3.806-2.573,6.276v35.978    c0,12.565-4.463,23.314-13.408,32.264c-8.952,8.945-19.701,13.418-32.264,13.418H82.224c-12.562,0-23.317-4.473-32.264-13.418    c-8.947-8.949-13.418-19.698-13.418-32.264V135.895c0-12.563,4.471-23.317,13.418-32.265c8.947-8.945,19.702-13.418,32.264-13.418    H319.77c4.186,0,8.47,0.571,12.847,1.714c3.433,1.141,6.472,0.381,9.134-2.284l13.986-13.99c2.286-2.281,3.138-5.043,2.57-8.278    c-0.571-3.044-2.286-5.234-5.141-6.565c-10.28-4.752-21.412-7.139-33.403-7.139H82.224c-22.648,0-42.017,8.042-58.102,24.126    C8.042,93.882,0,113.246,0,135.897V373.44c0,22.647,8.042,42.014,24.123,58.098c16.084,16.088,35.454,24.13,58.102,24.13h237.539    c22.647,0,42.014-8.042,58.098-24.13c16.088-16.084,24.13-35.45,24.13-58.098v-54.245    C401.991,315.191,400.084,312.434,396.283,310.907z"
+							fill="#D80027" />
+						<path d="M182.721,300.354v82.221h82.229L456.81,190.716l-82.228-82.225L182.721,300.354z M253.524,355.169L253.524,355.169    l-15.99-0.007v-27.401h-27.406v-15.984l33.12-33.12l43.396,43.4L253.524,355.169z M378.861,159.023l-99.931,99.928    c-3.234,3.241-6.376,3.334-9.421,0.288c-3.043-3.046-2.95-6.186,0.287-9.419l99.931-99.929c3.233-3.239,6.368-3.333,9.421-0.287    S382.091,155.789,378.861,159.023z"
+							fill="#D80027" />
+						<path d="M501.346,107.348L457.95,63.952c-5.328-5.33-11.796-7.995-19.413-7.995c-7.615,0-14.086,2.665-19.411,7.995    l-26.269,26.263l82.228,82.229l26.262-26.268c5.328-5.327,7.991-11.8,7.991-19.414S506.674,112.678,501.346,107.348z"
+							fill="#D80027" /> </g>
+				</g>
+			</symbol>
+			<symbol id="icon_phone" viewBox="0 0 60 60">
+				<g>
+					<path d="M42.595,0H17.405C14.977,0,13,1.977,13,4.405v51.189C13,58.023,14.977,60,17.405,60h25.189C45.023,60,47,58.023,47,55.595   V4.405C47,1.977,45.023,0,42.595,0z M15,8h30v38H15V8z M17.405,2h25.189C43.921,2,45,3.079,45,4.405V6H15V4.405   C15,3.079,16.079,2,17.405,2z M42.595,58H17.405C16.079,58,15,56.921,15,55.595V48h30v7.595C45,56.921,43.921,58,42.595,58z"
+						fill="#D80027" />
+					<path d="M30,49c-2.206,0-4,1.794-4,4s1.794,4,4,4s4-1.794,4-4S32.206,49,30,49z M30,55c-1.103,0-2-0.897-2-2s0.897-2,2-2   s2,0.897,2,2S31.103,55,30,55z"
+						fill="#D80027" />
+					<path d="M26,5h4c0.553,0,1-0.447,1-1s-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1S25.447,5,26,5z" fill="#D80027" />
+					<path d="M33,5h1c0.553,0,1-0.447,1-1s-0.447-1-1-1h-1c-0.553,0-1,0.447-1,1S32.447,5,33,5z" fill="#D80027" />
+					<path d="M56.612,4.569c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414c3.736,3.736,3.736,9.815,0,13.552   c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293   C61.128,16.434,61.128,9.085,56.612,4.569z"
+						fill="#D80027" />
+					<path d="M52.401,6.845c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414c1.237,1.237,1.918,2.885,1.918,4.639   s-0.681,3.401-1.918,4.638c-0.391,0.391-0.391,1.023,0,1.414c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293   c1.615-1.614,2.504-3.764,2.504-6.052S54.017,8.459,52.401,6.845z"
+						fill="#D80027" />
+					<path d="M4.802,5.983c0.391-0.391,0.391-1.023,0-1.414s-1.023-0.391-1.414,0c-4.516,4.516-4.516,11.864,0,16.38   c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414   C1.065,15.799,1.065,9.72,4.802,5.983z"
+						fill="#D80027" />
+					<path d="M9.013,6.569c-0.391-0.391-1.023-0.391-1.414,0c-1.615,1.614-2.504,3.764-2.504,6.052s0.889,4.438,2.504,6.053   c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414   c-1.237-1.237-1.918-2.885-1.918-4.639S7.775,9.22,9.013,7.983C9.403,7.593,9.403,6.96,9.013,6.569z"
+						fill="#D80027" /> </g>
+			</symbol>
+			<symbol id="icon_pin-point" viewBox="0 0 512.053 512.053">
+				<g>
+					<g>
+						<path d="M365.027,44.5c-30-29.667-66.333-44.5-109-44.5s-79,14.833-109,44.5s-45,65.5-45,107.5    c0,25.333,12.833,67.667,38.5,127c25.667,59.334,51.333,113.334,77,162s38.5,72.334,38.5,71c4-7.334,9.5-17.334,16.5-30    s19.333-36.5,37-71.5s33.167-67.166,46.5-96.5c13.334-29.332,25.667-59.667,37-91s17-55,17-71    C410.027,110,395.027,74.167,365.027,44.5z M289.027,184c-9.333,9.333-20.5,14-33.5,14c-13,0-24.167-4.667-33.5-14    s-14-20.5-14-33.5s4.667-24,14-33s20.5-13.5,33.5-13.5c13,0,24.167,4.5,33.5,13.5s14,20,14,33S298.36,174.667,289.027,184z"
+							fill="#D80027" /> </g>
+				</g>
+			</symbol>
+			<symbol id="icon_rise" viewBox="0 0 485.221 485.221">
+				<g>
+					<path d="M35.725,242.139c-1.836,0.325-3.643,0.471-5.418,0.471c-14.394,0-27.158-10.307-29.823-24.934   c-2.964-16.493,7.997-32.28,24.493-35.241c74.244-13.39,153.995-51.237,237.246-112.033l-35.005-42.47L394.245,0.004   l-59.318,158.62l-34.084-41.343C208.143,185.574,121.195,226.74,35.725,242.139z M90.988,333.589H60.661   c-16.731,0-30.327,13.562-30.327,30.321v90.98c0,16.764,13.595,30.326,30.327,30.326h30.327c16.762,0,30.324-13.562,30.324-30.326   v-90.98C121.312,347.151,107.75,333.589,90.988,333.589z M333.592,212.286h-30.327c-16.759,0-30.321,13.562-30.321,30.324v212.28   c0,16.764,13.562,30.326,30.321,30.326h30.327c16.765,0,30.327-13.562,30.327-30.326V242.61   C363.919,225.849,350.356,212.286,333.592,212.286z M454.898,151.633h-30.331c-16.76,0-30.322,13.565-30.322,30.327v272.931   c0,16.764,13.562,30.326,30.322,30.326h30.331c16.76,0,30.322-13.562,30.322-30.326V181.959   C485.221,165.198,471.658,151.633,454.898,151.633z M212.29,272.935h-30.325c-16.731,0-30.327,13.567-30.327,30.327v151.629   c0,16.764,13.595,30.326,30.327,30.326h30.325c16.764,0,30.326-13.562,30.326-30.326V303.262   C242.616,286.502,229.054,272.935,212.29,272.935z"
+						fill="#D80027" /> </g>
+			</symbol>
+			<symbol id="icon_shuffl" viewBox="0 0 511.626 511.626">
+				<g>
+					<g>
+						<path d="M234.693,270.09c8.754-20.745,16.175-37.019,22.266-48.82c4.568-8.754,8.854-16.13,12.851-22.126    c3.993-5.996,8.85-11.849,14.558-17.558c5.715-5.711,12.278-9.998,19.705-12.85c7.419-2.855,15.697-4.283,24.838-4.283h73.084    v54.818c0,2.474,0.903,4.617,2.71,6.423c1.807,1.809,3.949,2.712,6.42,2.712c2.669,0,4.859-0.854,6.563-2.568l91.365-91.359    c1.718-1.715,2.573-3.901,2.573-6.567c0-2.666-0.855-4.853-2.573-6.574L417.976,30.26c-2.279-1.902-4.572-2.849-6.852-2.849    c-2.669,0-4.853,0.855-6.57,2.57c-1.704,1.713-2.56,3.9-2.56,6.565v54.814h-73.084c-12.946,0-25.126,1.574-36.549,4.714    c-11.423,3.14-21.56,7.135-30.409,11.991c-8.852,4.854-17.416,11.372-25.697,19.558c-8.28,8.182-15.324,16.084-21.126,23.697    c-5.804,7.611-11.897,17.127-18.272,28.549c-6.374,11.42-11.514,21.414-15.416,29.978c-3.903,8.566-8.613,19.13-14.132,31.693    c-8.757,20.746-16.18,37.022-22.27,48.822c-4.567,8.754-8.853,16.132-12.847,22.127c-3.996,5.996-8.853,11.848-14.562,17.557    c-5.711,5.715-12.278,9.999-19.701,12.854c-7.421,2.854-15.703,4.284-24.838,4.284H9.139c-2.666,0-4.856,0.849-6.567,2.566    c-1.709,1.711-2.568,3.895-2.568,6.563v54.823c0,2.663,0.862,4.853,2.575,6.57c1.714,1.712,3.905,2.567,6.567,2.567h63.954    c12.946,0,25.125-1.574,36.547-4.716c11.42-3.142,21.558-7.139,30.406-11.991c8.853-4.856,17.417-11.376,25.697-19.562    c8.278-8.179,15.324-16.084,21.128-23.694c5.802-7.615,11.894-17.129,18.271-28.548c6.374-11.424,11.516-21.416,15.416-29.979    C224.464,293.217,229.173,282.656,234.693,270.09z"
+							fill="#D80027" />
+						<path d="M9.135,164.45h63.954c8.375,0,16.13,1.381,23.269,4.143s13.134,6.091,17.987,9.995c4.854,3.904,9.707,9.279,14.561,16.13    c4.853,6.855,8.708,12.9,11.563,18.131c2.853,5.236,6.374,12.137,10.562,20.701c14.659-34.451,27.694-60.432,39.115-77.943    c-30.454-42.825-69.473-64.241-117.058-64.241H9.135c-2.666,0-4.856,0.855-6.567,2.57C0.859,95.647,0,97.834,0,100.5v54.818    c0,2.667,0.855,4.851,2.568,6.563C4.283,163.596,6.473,164.45,9.135,164.45z"
+							fill="#D80027" />
+						<path d="M417.983,286.085c-2.286-1.902-4.572-2.847-6.858-2.847c-2.662,0-4.853,0.852-6.563,2.566    c-1.711,1.711-2.566,3.901-2.566,6.563v54.823h-73.091c-8.378,0-16.132-1.383-23.271-4.147    c-7.139-2.759-13.135-6.088-17.987-9.993c-4.849-3.901-9.705-9.28-14.558-16.135c-4.856-6.852-8.713-12.898-11.567-18.135    c-2.852-5.226-6.373-12.135-10.561-20.693c-14.655,34.259-27.596,60.24-38.828,77.943c5.137,7.422,10.467,14.037,15.987,19.838    c5.518,5.804,10.754,10.896,15.702,15.276c4.949,4.374,10.564,8.186,16.844,11.416c6.283,3.237,11.8,5.948,16.563,8.139    c4.771,2.189,10.76,3.949,17.99,5.283c7.231,1.328,13.322,2.334,18.271,2.991c4.948,0.664,11.707,1.143,20.272,1.431    c8.562,0.287,15.51,0.376,20.834,0.287c5.335-0.096,13.045-0.198,23.134-0.287c10.089-0.093,18.179-0.144,24.271-0.144v54.819    c0,2.474,0.903,4.616,2.71,6.423c1.807,1.808,3.949,2.711,6.42,2.711c2.669,0,4.859-0.855,6.563-2.566l91.365-91.358    c1.711-1.718,2.566-3.901,2.566-6.57c0-2.666-0.855-4.853-2.573-6.563L417.983,286.085z"
+							fill="#D80027" /> </g>
+				</g>
+			</symbol>
+			<symbol id="icon_star" viewBox="0 0 487.222 487.222">
+				<g>
+					<path d="M486.554,186.811c-1.6-4.9-5.8-8.4-10.9-9.2l-152-21.6l-68.4-137.5c-2.3-4.6-7-7.5-12.1-7.5l0,0c-5.1,0-9.8,2.9-12.1,7.6   l-67.5,137.9l-152,22.6c-5.1,0.8-9.3,4.3-10.9,9.2s-0.2,10.3,3.5,13.8l110.3,106.9l-25.5,151.4c-0.9,5.1,1.2,10.2,5.4,13.2   c2.3,1.7,5.1,2.6,7.9,2.6c2.2,0,4.3-0.5,6.3-1.6l135.7-71.9l136.1,71.1c2,1,4.1,1.5,6.2,1.5l0,0c7.4,0,13.5-6.1,13.5-13.5   c0-1.1-0.1-2.1-0.4-3.1l-26.3-150.5l109.6-107.5C486.854,197.111,488.154,191.711,486.554,186.811z M349.554,293.911   c-3.2,3.1-4.6,7.6-3.8,12l22.9,131.3l-118.2-61.7c-3.9-2.1-8.6-2-12.6,0l-117.8,62.4l22.1-131.5c0.7-4.4-0.7-8.8-3.9-11.9   l-95.6-92.8l131.9-19.6c4.4-0.7,8.2-3.4,10.1-7.4l58.6-119.7l59.4,119.4c2,4,5.8,6.7,10.2,7.4l132,18.8L349.554,293.911z"
+						fill="#D80027" /> </g>
+			</symbol>
+			<symbol id="icon_tablet" viewBox="0 0 33.994 33.994">
+				<g>
+					<path d="M27.125,0H6.867C5.59,0,4.562,1.033,4.562,2.309v29.377c0,1.272,1.028,2.308,2.305,2.308h20.258   c1.273,0,2.306-1.035,2.306-2.308V2.309C29.433,1.033,28.399,0,27.125,0z M16.997,33.129c-0.758,0-1.371-0.613-1.371-1.37   c0-0.758,0.613-1.372,1.371-1.372c0.756,0,1.371,0.614,1.371,1.372C18.368,32.516,17.753,33.129,16.997,33.129z M27.098,29.186   H6.896V2.774h20.202V29.186z"
+						fill="#D80027" /> </g>
+			</symbol>
+			<symbol id="icon_target" viewBox="0 0 512 512">
+				<g>
+					<g fill="#231F20">
+						<path d="m256,202.7c-29.4,0-53.3,23.9-53.3,53.3s23.9,53.3 53.3,53.3 53.3-23.9 53.3-53.3-23.9-53.3-53.3-53.3zm0,85.7c-17.9,0-32.4-14.5-32.4-32.4s14.5-32.4 32.4-32.4 32.4,14.5 32.4,32.4-14.5,32.4-32.4,32.4z"
+							fill="#D80027" />
+						<path d="m490.6,245.6h-29.6c-5.3-104.9-89.7-189.3-194.6-194.6v-29.6c0-5.8-4.7-10.4-10.4-10.4s-10.4,4.7-10.4,10.4v29.6c-104.9,5.3-189.3,89.7-194.6,194.6h-29.6c-5.8,0-10.4,4.7-10.4,10.4s4.7,10.4 10.4,10.4h29.6c5.3,104.9 89.7,189.3 194.6,194.6v29.6c0,5.8 4.7,10.4 10.4,10.4s10.4-4.7 10.4-10.4v-29.6c104.9-5.3 189.3-89.7 194.6-194.6h29.6c5.8,0 10.4-4.7 10.4-10.4s-4.7-10.4-10.4-10.4zm-50.5,0h-42.7c-5.1-69.9-61.1-125.9-131-131v-42.7c93.4,5.2 168.5,80.3 173.7,173.7zm-184.1,131.4c-66.7,0-121-54.3-121-121s54.3-121 121-121 121,54.3 121,121-54.3,121-121,121zm-10.4-305.1v42.7c-69.9,5.1-125.9,61.1-131,131h-42.7c5.2-93.4 80.3-168.5 173.7-173.7zm-173.7,194.5h42.7c5.1,69.9 61.1,125.9 131,131v42.7c-93.4-5.2-168.5-80.3-173.7-173.7zm194.5,173.7v-42.7c69.9-5.1 125.9-61.1 131-131h42.7c-5.2,93.4-80.3,168.5-173.7,173.7z"
+							fill="#D80027" /> </g>
+				</g>
+			</symbol>
+		</svg>
+		<header id="home" class="header">
+			<div class="header__container">
+				<img src="assets/images/logo.png" alt="логотип Graxpo" class="header__logo" title="" />
+				<nav class="header__navigation">
+					<ul class="header__menu-items">
+						<li class="header__menu-item">
+							<a href="#home" target="_self" class="header__menu-link">Home</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#about" target="_self" class="header__menu-link">About</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#service" target="_self" class="header__menu-link">Service</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#portfolio" target="_self" class="header__menu-link">Portfolio</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#teams" target="_self" class="header__menu-link">Teams</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#blog" target="_self" class="header__menu-link">Blog</a>
+						</li>
+						<li class="header__menu-item">
+							<a href="#contact" target="_self" class="header__menu-link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<h1 class="header__title">HELLO, WE’RE PROTHEMERS
+					<span class="header__caption">FRESH PREMIMIUM QUALITY PSD TEMPLATE</span>
+				</h1>
+				<div class="header__img-wrapper">
+					<img src="assets/images/headphones.png" alt="headphones" class="header__thing header__thing_headphones" title="" />
+					<img src="assets/images/pencils.png" alt="pencils" class="header__thing header__thing_pencils" title="" />
+					<!-- paralax group-->
+					<img src="assets/images/glasses.png" alt="glasses" class="header__thing header__thing_glasses" title="" />
+					<img src="assets/images/juice.png" alt="juice" class="header__thing header__thing_juice" title="" />
+					<img src="assets/images/mouse.png" alt="mouse" class="header__thing header__thing_mouse" title="" />
+					<img src="assets/images/pen-holder.png" alt="pen-holder" class="header__thing header__thing_pen-holder" title="" />
+				</div>
+				<div class="scroll-button">
+					<svg width="30" height="30" class="scroll-button__icon"><use xlink:href="#icon_mouse"></use></svg>
+					<div class="scroll-button__text">Scroll Down</div>
+				</div>
+			</div>
+		</header>
+		<div id="about" class="about">
+			<div class="about__container">
+				<section class="about__description">
+					<h2 class="about__title">About Graxpo</h2>
+					<p class="about__text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eos delectus qui, non culpa, ex quos illum nulla
+						recusandae, vitae quia. Obcaecati facere quibusdam vero ullam modi necessitatibus id earum quasi reprehenderit, placeat,
+						laborum adipisci voluptate totam sed atque laudantium ut. Officiis ab sit nemo laborum unde, inventore reprehenderit
+						culpa praesentium, alias repellat in natus, quo aliquid! Ad, repellat, dolorem.</p>
+					<a src="#" class="about__btn">Learn More!</a>
+				</section>
+				<section class="about__preview">
+					<img src="assets/images/preview.png" alt="page preview" width="444" height="325" class="about__img" title="" />
+				</section>
+			</div>
+		</div>
+		<section class="dids">
+			<div class="dids__container">
+				<h3 class="dids__title">What we do</h3>
+				<p class="dids__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text </p>
+				<div
+					class="dids__card-wrapper">
+					<article class="service-card">
+						<div class="service-card__icon-wrapper">
+							<svg width="30" height="30" class="service-card__icon"><use xlink:href="#icon_monitor"></use></svg>
+						</div>
+						<div class="service-card__content">
+							<h3 class="service-card__title">UI/UX Design</h3>
+							<p class="service-card__text">Lorem Ipsum is simply dummy text thprinting andthe industry's standard dummy text lorem Ipsum is simply dummy</p>
+						</div>
+					</article>
+					<article class="service-card">
+						<div class="service-card__icon-wrapper">
+							<svg width="30" height="30" class="service-card__icon"><use xlink:href="#icon_star"></use></svg>
+						</div>
+						<div class="service-card__content">
+							<h3 class="service-card__title">BRANDING &amp; IDENTY</h3>
+							<p class="service-card__text">Lorem Ipsum is simply dummy text thprinting andthe industry's standard dummy text lorem Ipsum is simply dummy</p>
+						</div>
+					</article>
+					<article class="service-card">
+						<div class="service-card__icon-wrapper">
+							<svg width="30" height="30" class="service-card__icon"><use xlink:href="#icon_tablet"></use></svg>
+						</div>
+						<div class="service-card__content">
+							<h3 class="service-card__title">APP DESIGN</h3>
+							<p class="service-card__text">Lorem Ipsum is simply dummy text thprinting andthe industry's standard dummy text lorem Ipsum is simply dummy</p>
+						</div>
+					</article>
+					<article class="service-card">
+						<div class="service-card__icon-wrapper">
+							<svg width="30" height="30" class="service-card__icon"><use xlink:href="#icon_pencil"></use></svg>
+						</div>
+						<div class="service-card__content">
+							<h3 class="service-card__title">PRINT DESIGN</h3>
+							<p class="service-card__text">Lorem Ipsum is simply dummy text thprinting andthe industry's standard dummy text lorem Ipsum is simply dummy</p>
+						</div>
+					</article>
+			</div>
+			</div>
+		</section>
+		<div class="views">
+			<div class="views__container">
+				<ul class="views__features">
+					<li class="views__item">
+						<svg width="30" height="30" class="views__icon"><use xlink:href="#icon_like"></use></svg>
+						<div class="views__amount">1580</div>
+						<h4 class="views__title">project completed</h4>
+					</li>
+					<li class="views__item">
+						<svg width="30" height="30" class="views__icon"><use xlink:href="#icon_heart"></use></svg>
+						<div class="views__amount">2850</div>
+						<h4 class="views__title">PEOPLE LOVED</h4>
+					</li>
+					<li class="views__item">
+						<svg width="30" height="30" class="views__icon"><use xlink:href="#icon_star"></use></svg>
+						<div class="views__amount">1500</div>
+						<h4 class="views__title">IDENTIFY EARN</h4>
+					</li>
+					<li class="views__item">
+						<svg width="30" height="30" class="views__icon"><use xlink:href="#icon_target"></use></svg>
+						<div class="views__amount">1430</div>
+						<h4 class="views__title">BUSINES DONOR</h4>
+					</li>
+				</ul>
+			</div>
+			<div class="views__overlay"></div>
+			<div class="views__background"></div>
+		</div>
+		<div class="three-steps">
+			<div class="three-steps__container">
+				<h3 class="three-steps__title">Three Simple Steps</h3>
+				<p class="three-steps__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text</p>
+				<div
+					class="three-steps__steps">
+					<div class="three-steps__step">
+						<div class="three-steps__icon-wrapper">
+							<svg width="30" height="30" class="three-steps__icon"><use xlink:href="#icon_tablet"></use></svg>
+						</div>
+						<h4 class="three-steps__step-title">technological</h4>
+						<p class="three-steps__step-text">Instant access from any device from mobile to laptop</p>
+					</div>
+					<div class="three-steps__step">
+						<div class="three-steps__icon-wrapper">
+							<svg width="30" height="30" class="three-steps__icon"><use xlink:href="#icon_rise"></use></svg>
+						</div>
+						<h4 class="three-steps__step-title">constant growth</h4>
+						<p class="three-steps__step-text">Many ears of constant growth and positive feedback</p>
+					</div>
+					<div class="three-steps__step">
+						<div class="three-steps__icon-wrapper">
+							<svg width="30" height="30" class="three-steps__icon"><use xlink:href="#icon_shuffl"></use></svg>
+						</div>
+						<h4 class="three-steps__step-title">variety</h4>
+						<p class="three-steps__step-text">Individual approach</p>
+					</div>
+			</div>
+		</div>
+		</div>
+		<div class="featured">
+			<div class="featured__container">
+				<h3 class="featured__title">OUR FEATURED WORK</h3>
+				<p class="featured__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text </p>
+				<div
+					class="featured__details-wrapper">
+					<div class="featured__img-wrapper">
+						<img src="assets/images/coffe-shop.jpg" alt="coffe shop" class="featured__img" title="" />
+						<a class="featured__btn-view">View Details</a>
+					</div>
+					<div class="featured__img-wrapper">
+						<img src="assets/images/shop-details.jpg" alt="shop details" class="featured__img" title="" />
+						<a class="featured__btn-view">View Details</a>
+					</div>
+					<div class="featured__img-wrapper">
+						<img src="assets/images/clothing-shop.jpg" alt="clothing shop" class="featured__img" title="" />
+						<a class="featured__btn-view">View Details</a>
+					</div>
+			</div>
+		</div>
+		</div>
+		<div id="service" class="service">
+			<h3 class="service__title">OUR BEST SERVICE</h3>
+			<p class="service__description">orem ipsum dolor sit amet, consectetur adipisicing elit. Odio, aut dolorem alias eveniet quaerat eum.</p>
+			<div class="service__service-wrapper">
+				<div class="service__container">
+					<div class="service__content-wrapper">
+						<img src="assets/images/basiness-meeting.jpg" alt="notebook " class="service__img-left" title="" />
+						<div class="service__info-wrapper">
+							<h4 class="service__info-title">Great Work</h4>
+							<p class="service__info-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolore aut tenetur totam cum minima nostrum eveniet
+								animi natus. Similique.</p>
+						</div>
+						<div class="service__info-wrapper">
+							<h4 class="service__info-title">Great Work</h4>
+							<p class="service__info-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolore aut tenetur totam cum minima nostrum eveniet
+								animi natus. Similique.</p>
+						</div>
+						<img src="assets/images/calculator.jpg" alt="notebook " class="service__img-right" title="" />
+						<img src="assets/images/conference.jpg" alt="notebook " class="service__img-left" title="" />
+						<div class="service__info-wrapper">
+							<h4 class="service__info-title">Great Work</h4>
+							<p class="service__info-description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolore aut tenetur totam cum minima nostrum eveniet
+								animi natus. Similique.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="keep-explore">
+			<div class="keep-explore__container">
+				<h3 class="keep-explore__title">CREATE YOUR OWN BUSINESS WITH OUR IDEAS !</h3>
+				<span class="keep-explore__subtitle">GET READY TO STAND OUT</span>
+				<a class="keep-explore__btn">KEEP EXPLORING</a>
+			</div>
+			<div class="keep-explore__overlay"></div>
+			<div class="keep-explore__background"></div>
+		</div>
+		<div id="portfolio" class="porfolio">
+			<div class="porfolio__container">
+				<h3 class="porfolio__title">Portfolio</h3>
+				<p class="porfolio__description">Lorem Ipsum is simply dummy text of the printing and typesetting been the industry's standard dummy text</p>
+				<div class="categories-galery">
+					<ul class="categories-galery__tabs">
+						<li class="categories-galery__tab categories-galery__tab_active">All Categories</li>
+						<li class="categories-galery__tab">Print</li>
+						<li class="categories-galery__tab">Identity</li>
+						<li class="categories-galery__tab">Branding</li>
+						<li class="categories-galery__tab">Web</li>
+					</ul>
+					<div data-item-selector=".item" class="categories-galery__galery mosaicflow">
+						<div class="mosaicflow__item">
+							<img src="assets/images/shop-details.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/book-small.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/bottle-small.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/brands-small.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/coffe-shop.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/coffe-shop.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/coffe-shop.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/coffe-shop.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/coffe-shop.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/coffe-shop.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/coffe-shop.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/news.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/conference.jpg" alt="shop-details" />
+						</div>
+						<div class="mosaicflow__item">
+							<img src="assets/images/coffe-shop.jpg" alt="shop-details" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="email-subscribe">
+			<div class="email-subscribe__container">
+				<div class="email-subscribe__info-wrapper">
+					<h4 class="email-subscribe__info-title">Subscribe to update</h4>
+					<p class="email-subscribe__info-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam</p>
+				</div>
+				<form class="email-subscribe__subscribe">
+					<input placeholder="Enter email address" class="email-subscribe__input" type="text" />
+					<button class="email-subscribe__button">Subscribe</button>
+				</form>
+			</div>
+			<div class="email-subscribe__overlay"></div>
+			<div class="email-subscribe__background"></div>
+		</div>
+		<div id="teams" class="crew">
+			<div class="crew__container">
+				<h3 class="crew__title">Meet out crew</h3>
+				<p class="crew__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text </p>
+				<div
+					class="crew__crew-cards">
+					<div class="crew__crew-card">
+						<div class="crew__img-wrapper">
+							<img src="../assets/images/person-hasan.jpg" alt="IBN HASAN" class="crew__img" title="" />
+							<div class="crew__text-wrapper">
+								<p class="crew__text">I am a professional CEO</p>
+								<div class="crew__socials">
+									<a class="crew__social-link">
+										<svg width="30" height="30" class="crew__icon"><use xlink:href="#icon_fb"></use></svg>
+									</a>
+									<a class="crew__social-link">
+										<svg width="30" height="30" class="crew__icon"><use xlink:href="#icon_istagram"></use></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="crew__name">IBN HASAN</div>
+						<div class="crew__pos"> CEO</div>
+					</div>
+					<div class="crew__crew-card">
+						<div class="crew__img-wrapper">
+							<img src="../assets/images/person-redwan.jpg" alt="Raf Redwan" class="crew__img" title="" />
+							<div class="crew__text-wrapper">
+								<p class="crew__text">Hi ! I m Redwan from bangladesh.I am a Professional graphic designer &amp; expert on print and UI / UX.</p>
+								<div class="crew__socials">
+									<a class="crew__social-link">
+										<svg width="30" height="30" class="crew__icon"><use xlink:href="#icon_fb"></use></svg>
+									</a>
+									<a class="crew__social-link">
+										<svg width="30" height="30" class="crew__icon"><use xlink:href="#icon_istagram"></use></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="crew__name">Raf Redwan</div>
+						<div class="crew__pos"> Lead of design</div>
+					</div>
+					<div class="crew__crew-card">
+						<div class="crew__img-wrapper">
+							<img src="../assets/images/person-owalar.jpg" alt="Bary Owalar mey" class="crew__img" title="" />
+							<div class="crew__text-wrapper">
+								<p class="crew__text">I am a professional Developer</p>
+								<div class="crew__socials">
+									<a class="crew__social-link">
+										<svg width="30" height="30" class="crew__icon"><use xlink:href="#icon_fb"></use></svg>
+									</a>
+									<a class="crew__social-link">
+										<svg width="30" height="30" class="crew__icon"><use xlink:href="#icon_istagram"></use></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="crew__name">Bary Owalar mey</div>
+						<div class="crew__pos"> Dev</div>
+					</div>
+					<div class="crew__crew-card">
+						<div class="crew__img-wrapper">
+							<img src="../assets/images/person-ahmed.jpg" alt="Tofail Ahmed" class="crew__img" title="" />
+							<div class="crew__text-wrapper">
+								<p class="crew__text">I am a professional CEO</p>
+								<div class="crew__socials">
+									<a class="crew__social-link">
+										<svg width="30" height="30" class="crew__icon"><use xlink:href="#icon_fb"></use></svg>
+									</a>
+									<a class="crew__social-link">
+										<svg width="30" height="30" class="crew__icon"><use xlink:href="#icon_istagram"></use></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="crew__name">Tofail Ahmed</div>
+						<div class="crew__pos"> Akamla</div>
+					</div>
+			</div>
+		</div>
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="swiper-slide-container">
+						<h3 class="page__title">testimonials</h3>
+						<p class="page__description">what our client say</p>
+						<img src="assets/images/avatar-man.png" alt="Raf Redwan" class="swiper-avatar" />
+						<p class="swiper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam,m quia.</p>
+						<span class="swiper-author">Raf Redwan</span>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-container">
+						<h3 class="page__title">testimonials</h3>
+						<p class="page__description">what our client say</p>
+						<img src="assets/images/avatar-man.png" alt="Raf Redwan" class="swiper-avatar" />
+						<p class="swiper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam,m quia.</p>
+						<span class="swiper-author">Raf Redwan</span>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-container">
+						<h3 class="page__title">testimonials</h3>
+						<p class="page__description">what our client say</p>
+						<img src="assets/images/avatar-man.png" alt="Raf Redwan" class="swiper-avatar" />
+						<p class="swiper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam,m quia.</p>
+						<span class="swiper-author">Raf Redwan</span>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide-container">
+						<h3 class="page__title">testimonials</h3>
+						<p class="page__description">what our client say</p>
+						<img src="assets/images/avatar-man.png" alt="Raf Redwan" class="swiper-avatar" />
+						<p class="swiper-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam,m quia.</p>
+						<span class="swiper-author">Raf Redwan</span>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div id="blog" class="latest-blog">
+			<div class="latest-blog__container">
+				<h3 class="latest-blog__title">Latest Blog</h3>
+				<p class="latest-blog__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text </p>
+				<div
+					class="latest-blog__posts">
+					<div class="latest-blog__post">
+						<img src="assets/images/news.jpg" alt="The winter tal's" class="latest-blog__post-img" title="" />
+						<div class="latest-blog__info">
+							<div class="latest-blog__info-title">The winter tal's</div>
+							<div class="latest-blog__info-author">Raf Redwan</div>
+							<div class="latest-blog__info-description">lorem inpsu mdolrorsf aoasdfsad sa sd </div>
+							<div class="latest-blog__info-date">12, september 2015
+								<svg width="30" height="30" class="latest-blog__icon"><use xlink:href="#icon_calendar"></use></svg>
+							</div>
+						</div>
+					</div>
+					<div class="latest-blog__post">
+						<img src="assets/images/news-car.jpg" alt="The winter tal's" class="latest-blog__post-img" title="" />
+						<div class="latest-blog__info">
+							<div class="latest-blog__info-title">The winter tal's</div>
+							<div class="latest-blog__info-author">Raf Redwan</div>
+							<div class="latest-blog__info-description">lorem inpsu mdolrorsf aoasdfsad sa sd </div>
+							<div class="latest-blog__info-date">12, september 2015
+								<svg width="30" height="30" class="latest-blog__icon"><use xlink:href="#icon_calendar"></use></svg>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		</div>
+		<div class="pricing-table">
+			<div class="pricing-table__container">
+				<h3 class="pricing-table__title">Pricing table</h3>
+				<p class="pricing-table__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummy text </p>
+				<div
+					class="pricing-table__price-cards">
+					<article class="pricing-table__price-card">
+						<div class="pricing-table__price-plan">Basic</div>
+						<div class="pricing-table__record">5 users</div>
+						<div class="pricing-table__record">Unlimited Forums</div>
+						<div class="pricing-table__record">X</div>
+						<div class="pricing-table__record">X</div>
+						<div class="pricing-table__record">X</div>
+						<div class="pricing-table__record">X</div>
+						<div class="pricing-table__record">free</div>
+						<button class="pricing-table__btn">Sign Up</button>
+					</article>
+					<article class="pricing-table__price-card">
+						<div class="pricing-table__price-plan">Standard</div>
+						<div class="pricing-table__record">20 users</div>
+						<div class="pricing-table__record">Unlimited Forums</div>
+						<div class="pricing-table__record">X</div>
+						<div class="pricing-table__record">X</div>
+						<div class="pricing-table__record">X</div>
+						<div class="pricing-table__record">X</div>
+						<div class="pricing-table__record">10$/month</div>
+						<button class="pricing-table__btn">Sign Up</button>
+					</article>
+					<article class="pricing-table__price-card">
+						<div class="pricing-table__price-plan">Advanced</div>
+						<div class="pricing-table__record">&gt; 50 users</div>
+						<div class="pricing-table__record">Unlimited Forums</div>
+						<div class="pricing-table__record">X</div>
+						<div class="pricing-table__record">X</div>
+						<div class="pricing-table__record">X</div>
+						<div class="pricing-table__record">X</div>
+						<div class="pricing-table__record">20$/month</div>
+						<button class="pricing-table__btn">Sign Up</button>
+					</article>
+			</div>
+		</div>
+		</div>
+		<div id="contact" class="contacts">
+			<div class="contacts__container">
+				<h3 class="contacts__title">Get in touch with us</h3>
+				<p class="contacts__description">Contacts us in any time and any way 24/7</p>
+				<div class="contacts__wrapper">
+					<form action="#" class="contacts__form">
+						<input placeholder="Your Name" class="contacts__input contacts__input_name" type="text" />
+						<input placeholder="Email Address" type="email" required="required" class="contacts__input contacts__input_email" />
+						<textarea rows="15" placeholder="Message" class="contacts__message"></textarea>
+						<button class="contacts__btn">Submit Now</button>
+					</form>
+					<div class="contacts__info">
+						<div class="contacts__info-item">
+							<div class="contacts__text">65,Prothemers Tower-1200
+								<br/>D Block Comilla, Bangladesh</div>
+							<svg width="30" height="30" class="contacts__icon"><use xlink:href="#icon_pin-point"></use></svg>
+						</div>
+						<div class="contacts__info-item">
+							<div class="contacts__text">myaddress@gmail.com</div>
+							<svg width="30" height="30" class="contacts__icon"><use xlink:href="#icon_letter"></use></svg>
+						</div>
+						<div class="contacts__info-item">
+							<svg width="30" height="30" class="contacts__icon"><use xlink:href="#icon_phone"></use></svg>
+							<div class="contacts__text">+79202223455</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<span class="footer__text">Copyright Redwan . All Rights Reserved</span>
+		</div>
+	</body>
+	<script src="/assets/scripts/app.min.js?v=a46a252"></script>
+
+</html>
