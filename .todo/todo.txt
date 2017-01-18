@@ -1,0 +1,7 @@
+1. latest blog fix on hover side font and position
+
+2. Portfolio make categories gallery work
+
+3. make production bandle
+
+4. deploy on github pages

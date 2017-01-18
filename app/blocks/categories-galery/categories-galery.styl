@@ -1,0 +1,54 @@
+.categories-galery
+	display block
+	clearfix()
+
+	text-align center
+
+
+	&__galery
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		max-height 800px
+		overflow-x scroll
+
+
+	&__tabs
+		margin: 70px auto 60px
+		padding: 0
+
+
+	&__tab
+		position relative
+		display inline-block
+		padding: 15px
+		cursor pointer
+		color color-font-tabs
+
+		&_active::before
+			content: ''
+			position absolute
+			left 1em
+			bottom 0
+			width 30%
+			height 3px
+			background color-font-tabs
+
+		&::after
+			content '/'
+			position absolute
+			top 1em
+			right -0.5em
+
+		&:last-child::after
+			display none
+
+
+.mosaicflow__item
+	flex 0 0 25%
+
+
+	img
+		width 300px
+
+
