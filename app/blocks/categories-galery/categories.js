@@ -1,4 +1,3 @@
-// plugin https://github.com/sapegin/jquery.mosaicflow
 import $ from 'jquery';
 import urls from './galery.json';
 import {throttle} from 'lodash';
@@ -8,6 +7,7 @@ let $mosaic = $('.categories-galery__galery');
 const $tabs = $('.categories-galery__tab');
 
 let category = '';
+let breakPoints = [900, 400];
 
 
 $tabMenu.on('click', ev => {
@@ -61,16 +61,16 @@ function reorganizeImages(cat) {
 	}
 }
 
-function getWidth(bp1, bp2, bp3) {
+function getWidth(bp1, bp2) {
 	let width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	if (width > bp1) return 100 / 3;
 	if (width > bp2) return 100 / 2;
-	if (width > bp3) return 100;
 	return 100;
 }
 
+
 window.addEventListener('resize', throttle(() => {
-		const width = getWidth(1000, 600, 400);
+		const width = getWidth(...breakPoints);
 		$mosaic.find('.mosaicflow__column').attr('style', `width: ${width}%`);
 		reorganizeImages(category);
 	}
@@ -89,7 +89,7 @@ function appendItems(list) {
 }
 
 function makeColums($el) {
-	const width = getWidth(1000, 600, 400);
+	const width = getWidth(...breakPoints);
 	let numberOfColumns = Math.ceil($el[0].offsetWidth / ($el[0].offsetWidth * width / 100));
 	for (let i = 0; i < numberOfColumns; i++) {
 		$el.append(`<div class='mosaicflow__column' style="width:${width}%"></div>`);
