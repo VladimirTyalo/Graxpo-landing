@@ -67,3 +67,26 @@
 	display block
 	z-index 30
 
+@media (max-width: 850px)
+		.featured
+
+			&__btn-view
+				width 80%
+				text-align center
+				font-size(12px)
+
+			&__img-wrapper
+
+				&::after
+					content ''
+					border 10px solid transparent
+					background rgba(253, 92, 79, 0.9)
+					background-clip content-box
+					z-index 20
+					opacity 0
+					transition 0.5s
+
+
+
+
+
