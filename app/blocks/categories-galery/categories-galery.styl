@@ -6,11 +6,8 @@
 
 
 	&__galery
-		display flex
-		flex-direction row
-		flex-wrap wrap
-		max-height 800px
-		overflow-x scroll
+		display block
+		clearfix()
 
 
 	&__tabs
@@ -44,11 +41,12 @@
 			display none
 
 
-.mosaicflow__item
-	flex 0 0 25%
 
+.mosaicflow__item
 
 	img
-		width 300px
+		width 100%
+		display block
 
-
+.mosaicflow__column
+	float left

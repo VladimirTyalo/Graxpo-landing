@@ -11,14 +11,18 @@
 
 /*jshint browser:true, jquery:true, white:false, smarttabs:true */
 /*global jQuery:false, define:false*/
-(function(factory) {  // Try to register as an anonymous AMD module
+export const mosaicflow = ($) => mos(factory, $);
+
+function mos(factory, jQuery) {  // Try to register as an anonymous AMD module
 	if (typeof define === 'function' && define.amd) {
 		define(['jquery'], factory);
 	}
 	else {
 		factory(jQuery);
 	}
-}(function($) {
+}
+
+ function factory($) {
 	'use strict';
 	var cnt = 0;
 
@@ -362,4 +366,4 @@
 	// Auto init
 	$(function() { $('.mosaicflow').mosaicflow(); });
 
-}));
+};
