@@ -43,7 +43,7 @@ function reorganizeImages(cat) {
 		}
 		case 'branding': {
 			appendItems(urls.branding);
-			category  = 'branding';
+			category = 'branding';
 			break;
 		}
 		case 'web': {
@@ -65,6 +65,7 @@ function getWidth(bp1, bp2) {
 	let width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	if (width > bp1) return 100 / 3;
 	if (width > bp2) return 100 / 2;
+
 	return 100;
 }
 
@@ -78,7 +79,7 @@ window.addEventListener('resize', throttle(() => {
 ));
 
 
-$tabMenu.find('.categories-galery__tab:first-child').trigger('click')
+$tabMenu.find('.categories-galery__tab:first-child').trigger('click');
 
 function appendItems(list) {
 	list.forEach(name => {
@@ -97,8 +98,8 @@ function makeColums($el) {
 }
 
 function getLowestColumn($el) {
-	var $result = null;
-	var minHeight = Infinity;
+	let $result = null;
+	let minHeight = Infinity;
 	$el.find('.mosaicflow__column').each((index, el) => {
 		const height = el.offsetHeight;
 		if (height < minHeight) {
